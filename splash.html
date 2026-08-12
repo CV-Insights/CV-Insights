@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CV Insight</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="splash.css">
+</head>
+
+<body>
+
+<div class="card" id="card">
+
+<div class="logo">
+
+CV
+
+</div>
+
+<h1>
+
+CV Insight
+
+</h1>
+
+<div class="subtitle">
+
+AI Resume Intelligence Platform
+
+</div>
+
+<div class="status" id="status">
+
+Initializing AI Engine...
+
+</div>
+
+<div class="loader">
+
+<div class="progress"></div>
+
+</div>
+
+<div class="footer">
+
+Powered by Artificial Intelligence
+
+</div>
+
+</div>
+
+<script>
+
+const status=document.getElementById("status");
+
+const messages=[
+
+"Initializing AI Engine...",
+"Loading ATS Models...",
+"Preparing Workspace...",
+"Launching CV Insight..."
+
+];
+
+let i=0;
+
+const change=setInterval(()=>{
+
+i++;
+
+if(i<messages.length){
+
+status.textContent=messages[i];
+
+}
+
+},1200);
+
+setTimeout(() => {
+
+    clearInterval(change);
+
+    document.getElementById("card").classList.add("fade");
+
+    setTimeout(() => {
+
+        window.location.href = "intro.html";
+
+    }, 800);
+
+}, 5000);
+
+</script>
+
+</body>
+</html>

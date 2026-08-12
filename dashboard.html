@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV Insight Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ========================= -->
+<!-- Sidebar -->
+<!-- ========================= -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-file-circle-check"></i>
+
+        <h2>CV Insight</h2>
+
+    </div>
+
+    <ul class="menu">
+
+        <li class="active">
+
+            <a href="#">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-upload"></i>
+
+                <span>Upload Resume</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                <span>Job Description</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <span>Resume Analysis</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <span>AI Suggestions</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+                <span>Resume Templates</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                <span>History</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-user-tie"></i>
+
+                <span>Interview Prep</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-user"></i>
+
+                <span>Profile</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>Settings</span>
+
+            </a>
+
+        </li>
+
+    </ul>
+
+    <div class="logout">
+
+        <button>
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </button>
+
+    </div>
+
+</aside>
+
+<!-- ========================= -->
+<!-- Main Content -->
+<!-- ========================= -->
+
+<div class="main">
+
+<!-- ========================= -->
+<!-- Navbar -->
+<!-- ========================= -->
+
+<header class="topbar">
+
+<div class="left-nav">
+
+<button id="menuBtn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+<h1>
+
+Dashboard
+
+</h1>
+
+</div>
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search resume, keywords...">
+
+</div>
+
+<div class="right-nav">
+
+<button id="themeBtn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<div class="notification">
+
+<i class="fa-solid fa-bell"></i>
+
+<span>4</span>
+
+</div>
+
+<div class="profile">
+
+<img src="https://i.pravatar.cc/150?img=12">
+
+<div>
+
+<h4>Bhumish</h4>
+
+<p>Student</p>
+
+</div>
+
+</div>
+
+<button class="download">
+
+<i class="fa-solid fa-download"></i>
+
+Download Report
+
+</button>
+
+</div>
+
+</header>
+
+<!-- ========================= -->
+<!-- Welcome Banner -->
+<!-- ========================= -->
+
+<section class="welcome">
+
+<div>
+
+<h2>
+
+Welcome Back 👋
+
+</h2>
+
+<p>
+
+Analyze your resume and improve your ATS score with AI-powered insights.
+
+</p>
+
+</div>
+
+<button>
+
+<i class="fa-solid fa-plus"></i>
+
+Upload New Resume
+
+</button>
+
+</section>
+
+<!-- ========================= -->
+<!-- Statistics Cards -->
+<!-- ========================= -->
+
+<section class="stats">
+
+<div class="card">
+
+<div>
+
+<p>ATS Score</p>
+
+<h2 id="atsScore">87%</h2>
+
+</div>
+
+<i class="fa-solid fa-chart-simple"></i>
+
+</div>
+
+<div class="card">
+
+<div>
+
+<p>Resume Strength</p>
+
+<h2>Strong</h2>
+
+</div>
+
+<i class="fa-solid fa-shield-halved"></i>
+
+</div>
+
+<div class="card">
+
+<div>
+
+<p>Keyword Match</p>
+
+<h2>78%</h2>
+
+</div>
+
+<i class="fa-solid fa-key"></i>
+
+</div>
+
+<div class="card">
+
+<div>
+
+<p>Experience Match</p>
+
+<h2>91%</h2>
+
+</div>
+
+<i class="fa-solid fa-briefcase"></i>
+
+</div>
+
+<div class="card">
+
+<div>
+
+<p>Formatting</p>
+
+<h2>95%</h2>
+
+</div>
+
+<i class="fa-solid fa-file-lines"></i>
+
+</div>
+
+<div class="card">
+
+<div>
+
+<p>Grammar</p>
+
+<h2>98%</h2>
+
+</div>
+
+<i class="fa-solid fa-spell-check"></i>
+
+</div>
+
+</section>
+
+<!-- Remaining sections in Part 2A-2 -->
+
+<!-- ================================= -->
+<!-- Dashboard Content -->
+<!-- ================================= -->
+
+<section class="dashboard-grid">
+
+    <!-- Resume Preview -->
+
+    <div class="panel resume-preview">
+
+        <div class="panel-header">
+
+            <h3>Resume Preview</h3>
+
+            <button>View Full Resume</button>
+
+        </div>
+
+        <div class="resume-paper">
+
+            <h2>John Anderson</h2>
+
+            <p>Full Stack Developer</p>
+
+            <hr>
+
+            <h4>Professional Summary</h4>
+
+            <p>
+                Passionate software developer with 4+ years of
+                experience in JavaScript, React, Node.js and cloud
+                technologies.
+            </p>
+
+            <h4>Skills</h4>
+
+            <ul>
+
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React JS</li>
+                <li>Node JS</li>
+                <li>MongoDB</li>
+
+            </ul>
+
+            <h4>Experience</h4>
+
+            <p>
+
+                Software Engineer
+
+                <br>
+
+                ABC Technologies
+
+                <br>
+
+                2022 - Present
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Right Column -->
+
+    <div class="right-column">
+
+        <!-- Circular ATS Score -->
+
+        <div class="panel score-panel">
+
+            <h3>Overall ATS Score</h3>
+
+            <div class="circle-score">
+
+                <div class="circle">
+
+                    <span>87%</span>
+
+                </div>
+
+            </div>
+
+            <p>
+
+                Excellent Resume Quality
+
+            </p>
+
+        </div>
+
+        <!-- Resume Strength -->
+
+        <div class="panel strength-panel">
+
+            <h3>Resume Strength</h3>
+
+            <div class="progress-item">
+
+                <span>Content</span>
+
+                <div class="progress">
+
+                    <div style="width:92%"></div>
+
+                </div>
+
+            </div>
+
+            <div class="progress-item">
+
+                <span>Formatting</span>
+
+                <div class="progress">
+
+                    <div style="width:95%"></div>
+
+                </div>
+
+            </div>
+
+            <div class="progress-item">
+
+                <span>Keywords</span>
+
+                <div class="progress">
+
+                    <div style="width:76%"></div>
+
+                </div>
+
+            </div>
+
+            <div class="progress-item">
+
+                <span>Grammar</span>
+
+                <div class="progress">
+
+                    <div style="width:98%"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- Keyword Analysis -->
+<!-- ================================= -->
+
+<section class="analysis-grid">
+
+    <!-- Keyword Match -->
+
+    <div class="panel">
+
+        <div class="panel-header">
+
+            <h3>Matched Keywords</h3>
+
+            <span>18 Found</span>
+
+        </div>
+
+        <div class="tags">
+
+            <span>HTML</span>
+
+            <span>CSS</span>
+
+            <span>JavaScript</span>
+
+            <span>React</span>
+
+            <span>Git</span>
+
+            <span>REST API</span>
+
+            <span>Node.js</span>
+
+            <span>MongoDB</span>
+
+            <span>Agile</span>
+
+            <span>Bootstrap</span>
+
+        </div>
+
+    </div>
+
+    <!-- Missing Keywords -->
+
+    <div class="panel">
+
+        <div class="panel-header">
+
+            <h3>Missing Keywords</h3>
+
+            <span>Improve ATS</span>
+
+        </div>
+
+        <div class="tags missing">
+
+            <span>AWS</span>
+
+            <span>Docker</span>
+
+            <span>Kubernetes</span>
+
+            <span>CI/CD</span>
+
+            <span>Azure</span>
+
+            <span>Power BI</span>
+
+            <span>TensorFlow</span>
+
+            <span>Machine Learning</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- Missing Skills -->
+<!-- ================================= -->
+
+<section class="panel">
+
+    <div class="panel-header">
+
+        <h3>Skills Recommended by AI</h3>
+
+        <button>Add Skills</button>
+
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+
+            <i class="fa-brands fa-aws"></i>
+
+            <h4>AWS</h4>
+
+            <p>Cloud Deployment</p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <i class="fa-brands fa-docker"></i>
+
+            <h4>Docker</h4>
+
+            <p>Containerization</p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <i class="fa-solid fa-database"></i>
+
+            <h4>SQL</h4>
+
+            <p>Database</p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <h4>Power BI</h4>
+
+            <p>Visualization</p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <h4>Machine Learning</h4>
+
+            <p>AI Skill</p>
+
+        </div>
+
+        <div class="skill-card">
+
+            <i class="fa-solid fa-cloud"></i>
+
+            <h4>Azure</h4>
+
+            <p>Cloud Platform</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- ATS Format Check -->
+<!-- ================================= -->
+
+<section class="panel">
+
+    <div class="panel-header">
+
+        <h3>ATS Format Checklist</h3>
+
+        <span>8 / 10 Passed</span>
+
+    </div>
+
+    <table class="ats-table">
+
+        <tr>
+
+            <td>✔ PDF Format</td>
+
+            <td>Passed</td>
+
+        </tr>
+
+        <tr>
+
+            <td>✔ Proper Headings</td>
+
+            <td>Passed</td>
+
+        </tr>
+
+        <tr>
+
+            <td>✔ One Column Layout</td>
+
+            <td>Passed</td>
+
+        </tr>
+
+        <tr>
+
+            <td>✔ Font Consistency</td>
+
+            <td>Passed</td>
+
+        </tr>
+
+        <tr>
+
+            <td>✔ Contact Information</td>
+
+            <td>Passed</td>
+
+        </tr>
+
+        <tr>
+
+            <td>⚠ Tables Detected</td>
+
+            <td>Warning</td>
+
+        </tr>
+
+        <tr>
+
+            <td>⚠ Icons Overused</td>
+
+            <td>Warning</td>
+
+        </tr>
+
+        <tr>
+
+            <td>✔ Standard Margins</td>
+
+            <td>Passed</td>
+
+        </tr>
+
+    </table>
+
+</section>
+<!-- ================================= -->
+<!-- Resume Analytics -->
+<!-- ================================= -->
+
+<section class="analytics-row">
+
+    <!-- Radar Chart -->
+
+    <div class="panel chart-panel">
+
+        <div class="panel-header">
+
+            <h3>Resume Analysis</h3>
+
+            <button>Refresh</button>
+
+        </div>
+
+        <canvas id="resumeChart" width="350" height="350"></canvas>
+
+    </div>
+
+    <!-- Score Breakdown -->
+
+    <div class="panel breakdown">
+
+        <div class="panel-header">
+
+            <h3>Score Breakdown</h3>
+
+        </div>
+
+        <div class="score-box">
+
+            <div class="score-item">
+
+                <div class="title">
+
+                    <span>Technical Skills</span>
+
+                    <span>92%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:92%"></div>
+
+                </div>
+
+            </div>
+
+            <div class="score-item">
+
+                <div class="title">
+
+                    <span>Experience</span>
+
+                    <span>90%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:90%"></div>
+
+                </div>
+
+            </div>
+
+            <div class="score-item">
+
+                <div class="title">
+
+                    <span>Education</span>
+
+                    <span>88%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:88%"></div>
+
+                </div>
+
+            </div>
+
+            <div class="score-item">
+
+                <div class="title">
+
+                    <span>Projects</span>
+
+                    <span>81%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:81%"></div>
+
+                </div>
+
+            </div>
+
+            <div class="score-item">
+
+                <div class="title">
+
+                    <span>Achievements</span>
+
+                    <span>73%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:73%"></div>
+
+                </div>
+
+            </div>
+
+            <div class="score-item">
+
+                <div class="title">
+
+                    <span>Certifications</span>
+
+                    <span>96%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:96%"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- Grammar & Writing -->
+<!-- ================================= -->
+
+<section class="panel">
+
+    <div class="panel-header">
+
+        <h3>Grammar & Writing Analysis</h3>
+
+        <span>98% Accuracy</span>
+
+    </div>
+
+    <div class="grammar-grid">
+
+        <div class="grammar-card good">
+
+            <i class="fa-solid fa-check-circle"></i>
+
+            <h4>Grammar</h4>
+
+            <p>No grammar mistakes detected.</p>
+
+        </div>
+
+        <div class="grammar-card warning">
+
+            <i class="fa-solid fa-pen"></i>
+
+            <h4>Passive Voice</h4>
+
+            <p>2 passive sentences found.</p>
+
+        </div>
+
+        <div class="grammar-card warning">
+
+            <i class="fa-solid fa-repeat"></i>
+
+            <h4>Repeated Words</h4>
+
+            <p>3 repeated words detected.</p>
+
+        </div>
+
+        <div class="grammar-card good">
+
+            <i class="fa-solid fa-font"></i>
+
+            <h4>Vocabulary</h4>
+
+            <p>Professional language used.</p>
+
+        </div>
+
+        <div class="grammar-card good">
+
+            <i class="fa-solid fa-spell-check"></i>
+
+            <h4>Spelling</h4>
+
+            <p>No spelling mistakes.</p>
+
+        </div>
+
+        <div class="grammar-card warning">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <h4>Action Verbs</h4>
+
+            <p>Add stronger action verbs.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- Performance Overview -->
+<!-- ================================= -->
+
+<section class="panel">
+
+    <div class="panel-header">
+
+        <h3>Performance Overview</h3>
+
+    </div>
+
+    <div class="overview-cards">
+
+        <div class="overview">
+
+            <i class="fa-solid fa-users"></i>
+
+            <h2>245</h2>
+
+            <p>Recruiters Matched</p>
+
+        </div>
+
+        <div class="overview">
+
+            <i class="fa-solid fa-paper-plane"></i>
+
+            <h2>78%</h2>
+
+            <p>Application Success</p>
+
+        </div>
+
+        <div class="overview">
+
+            <i class="fa-solid fa-trophy"></i>
+
+            <h2>Top 10%</h2>
+
+            <p>Resume Ranking</p>
+
+        </div>
+
+        <div class="overview">
+
+            <i class="fa-solid fa-star"></i>
+
+            <h2>4.9/5</h2>
+
+            <p>Resume Quality</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- AI Suggestions -->
+<!-- ================================= -->
+
+<section class="panel">
+
+    <div class="panel-header">
+
+        <h3>AI Suggestions</h3>
+
+        <button>Generate Again</button>
+
+    </div>
+
+    <div class="suggestions">
+
+        <div class="suggestion-card">
+
+            <i class="fa-solid fa-lightbulb"></i>
+
+            <div>
+
+                <h4>Add More Projects</h4>
+
+                <p>Add 2-3 real-world projects with measurable outcomes.</p>
+
+            </div>
+
+        </div>
+
+        <div class="suggestion-card">
+
+            <i class="fa-solid fa-key"></i>
+
+            <div>
+
+                <h4>Increase Keywords</h4>
+
+                <p>Include AWS, Docker, Kubernetes and CI/CD keywords.</p>
+
+            </div>
+
+        </div>
+
+        <div class="suggestion-card">
+
+            <i class="fa-solid fa-file-circle-check"></i>
+
+            <div>
+
+                <h4>Improve Formatting</h4>
+
+                <p>Reduce white space and align section headings.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- Job Match -->
+<!-- ================================= -->
+
+<section class="job-match">
+
+    <div class="panel match-card">
+
+        <h3>Job Match Score</h3>
+
+        <div class="match-circle">
+
+            <h1>91%</h1>
+
+            <p>Excellent Match</p>
+
+        </div>
+
+    </div>
+
+    <div class="panel">
+
+        <h3>Matching Companies</h3>
+
+        <div class="company-list">
+
+            <div class="company">
+
+                <i class="fa-brands fa-google"></i>
+
+                Google
+
+                <span>95%</span>
+
+            </div>
+
+            <div class="company">
+
+                <i class="fa-brands fa-microsoft"></i>
+
+                Microsoft
+
+                <span>92%</span>
+
+            </div>
+
+            <div class="company">
+
+                <i class="fa-brands fa-amazon"></i>
+
+                Amazon
+
+                <span>90%</span>
+
+            </div>
+
+            <div class="company">
+
+                <i class="fa-brands fa-meta"></i>
+
+                Meta
+
+                <span>88%</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- Resume History -->
+<!-- ================================= -->
+
+<section class="panel">
+
+    <div class="panel-header">
+
+        <h3>Resume Analysis History</h3>
+
+        <button>View All</button>
+
+    </div>
+
+    <table class="history-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Date</th>
+
+                <th>ATS Score</th>
+
+                <th>Version</th>
+
+                <th>Status</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>20 July</td>
+
+                <td>83%</td>
+
+                <td>V1</td>
+
+                <td><span class="success">Improved</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td>23 July</td>
+
+                <td>86%</td>
+
+                <td>V2</td>
+
+                <td><span class="success">Improved</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td>28 July</td>
+
+                <td>91%</td>
+
+                <td>V3</td>
+
+                <td><span class="excellent">Excellent</span></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!-- ================================= -->
+<!-- Next Steps -->
+<!-- ================================= -->
+
+<section class="panel">
+
+    <div class="panel-header">
+
+        <h3>Recommended Next Steps</h3>
+
+    </div>
+
+    <div class="next-steps">
+
+        <div class="step">
+
+            <i class="fa-solid fa-upload"></i>
+
+            <h4>Upload New Resume</h4>
+
+        </div>
+
+        <div class="step">
+
+            <i class="fa-solid fa-rotate"></i>
+
+            <h4>Re-Analyze</h4>
+
+        </div>
+
+        <div class="step">
+
+            <i class="fa-solid fa-file-arrow-down"></i>
+
+            <h4>Download Report</h4>
+
+        </div>
+
+        <div class="step">
+
+            <i class="fa-solid fa-user-tie"></i>
+
+            <h4>Interview Prep</h4>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- Footer -->
+<!-- ================================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 CV Insight | AI Resume Analyzer
+
+    </p>
+
+</footer>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>

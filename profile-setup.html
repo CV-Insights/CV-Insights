@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CV Insights | Profile Setup</title>
+
+    <link rel="stylesheet"
+          href="profile-setup.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+
+<!--==========================================
+            BACKGROUND
+===========================================-->
+
+<div class="background">
+
+    <div class="circle circle1"></div>
+
+    <div class="circle circle2"></div>
+
+    <div class="circle circle3"></div>
+
+</div>
+
+
+
+<!--==========================================
+            MAIN CONTAINER
+===========================================-->
+
+<div class="setup-container">
+
+
+
+    <!--==========================================
+                LEFT PANEL
+    ===========================================-->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <h2>CV Insights</h2>
+
+        </div>
+
+        <div class="welcome">
+
+            <h1>
+
+                Complete Your Profile
+
+            </h1>
+
+            <p>
+
+                Let's personalize your experience.
+                This information will be used across
+                your dashboard, resume builder and
+                ATS analysis.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- Progress -->
+
+        <div class="progress-wrapper">
+
+            <div class="progress-header">
+
+                <span>
+
+                    Progress
+
+                </span>
+
+                <span id="progressText">
+
+                    1 / 6
+
+                </span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <span id="progressFill"></span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Steps -->
+
+        <ul class="step-list">
+
+            <li class="active">
+
+                <span>1</span>
+
+                Personal Details
+
+            </li>
+
+            <li>
+
+                <span>2</span>
+
+                Education
+
+            </li>
+
+            <li>
+
+                <span>3</span>
+
+                Professional
+
+            </li>
+
+            <li>
+
+                <span>4</span>
+
+                Skills
+
+            </li>
+
+            <li>
+
+                <span>5</span>
+
+                Resume
+
+            </li>
+
+            <li>
+
+                <span>6</span>
+
+                Review
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+
+
+    <!--==========================================
+                FORM SECTION
+    ===========================================-->
+
+    <main class="form-area">
+
+        <form id="setupForm">
+
+
+
+            <!--==========================================
+                        STEP 1
+            ===========================================-->
+
+            <section class="step active-step"
+                     data-step="1">
+
+                <div class="title">
+
+                    <h2>
+
+                        Personal Information
+
+                    </h2>
+
+                    <p>
+
+                        Tell us about yourself.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Profile Image -->
+
+                <div class="profile-upload">
+
+                    <img src="https://placehold.co/140x140"
+                         id="profilePreview"
+                         alt="Profile">
+
+                    <input type="file"
+                           id="profileImage"
+                           accept="image/*"
+                           hidden>
+
+                    <button type="button"
+                            class="upload-photo">
+
+                        Upload Photo
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- First Row -->
+
+                <div class="grid-2">
+
+                    <div class="input-group">
+
+                        <label>
+
+                            First Name
+
+                        </label>
+
+                        <input
+
+                            type="text"
+
+                            id="firstName"
+
+                            placeholder="John"
+
+                            required>
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Last Name
+
+                        </label>
+
+                        <input
+
+                            type="text"
+
+                            id="lastName"
+
+                            placeholder="Doe"
+
+                            required>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Email -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Email Address
+
+                    </label>
+
+                    <input
+
+                        type="email"
+
+                        id="email"
+
+                        placeholder="john@example.com"
+
+                        required>
+
+                </div>
+
+
+
+                <!-- Phone -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Phone Number
+
+                    </label>
+
+                    <input
+
+                        type="tel"
+
+                        id="phone"
+
+                        placeholder="+91 XXXXX XXXXX">
+
+                </div>
+
+
+
+                <!-- DOB + Gender -->
+
+                <div class="grid-2">
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Date of Birth
+
+                        </label>
+
+                        <input
+
+                            type="date"
+
+                            id="dob">
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Gender
+
+                        </label>
+
+                        <select id="gender">
+
+                            <option value="">
+
+                                Select
+
+                            </option>
+
+                            <option>
+
+                                Male
+
+                            </option>
+
+                            <option>
+
+                                Female
+
+                            </option>
+
+                            <option>
+
+                                Other
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Address -->
+
+                <div class="grid-3">
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Country
+
+                        </label>
+
+                        <input
+
+                            type="text"
+
+                            id="country"
+
+                            placeholder="India">
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label>
+
+                            State
+
+                        </label>
+
+                        <input
+
+                            type="text"
+
+                            id="state"
+
+                            placeholder="Punjab">
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label>
+
+                            City
+
+                        </label>
+
+                        <input
+
+                            type="text"
+
+                            id="city"
+
+                            placeholder="Patiala">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Navigation -->
+
+                <div class="buttons">
+
+                    <button
+
+                        type="button"
+
+                        class="next-btn">
+
+                        Next
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+                        <!--==========================================
+                        STEP 2
+            ===========================================-->
+
+            <section class="step"
+                     data-step="2">
+
+                <div class="title">
+
+                    <h2>
+
+                        Education Details
+
+                    </h2>
+
+                    <p>
+
+                        Tell us about your academic background.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="grid-2">
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Highest Qualification
+
+                        </label>
+
+                        <select id="qualification">
+
+                            <option value="">Select Qualification</option>
+
+                            <option>High School</option>
+
+                            <option>Diploma</option>
+
+                            <option>Bachelor's Degree</option>
+
+                            <option>Master's Degree</option>
+
+                            <option>PhD</option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Graduation Year
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="graduationYear"
+                            placeholder="2028">
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="input-group">
+
+                    <label>
+
+                        College / University
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="college"
+                        placeholder="Chitkara University">
+
+                </div>
+
+
+
+                <div class="grid-2">
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Degree
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="degree"
+                            placeholder="B.E.">
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Branch
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="branch"
+                            placeholder="CSE AI & ML">
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="grid-3">
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Current CGPA
+
+                        </label>
+
+                        <input
+                            type="number"
+                            step="0.01"
+                            id="cgpa"
+                            placeholder="9.20">
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Class X %
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="class10"
+                            placeholder="90">
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Class XII %
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="class12"
+                            placeholder="84">
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="buttons">
+
+                    <button
+                        type="button"
+                        class="prev-btn">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Previous
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="next-btn">
+
+                        Next
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+
+
+            <!--==========================================
+                        STEP 3
+            ===========================================-->
+
+            <section class="step"
+                     data-step="3">
+
+                <div class="title">
+
+                    <h2>
+
+                        Professional Details
+
+                    </h2>
+
+                    <p>
+
+                        Help us personalize your career profile.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="grid-2">
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Current Role
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="currentRole"
+                            placeholder="Student">
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Years of Experience
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="experience"
+                            placeholder="0">
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="grid-2">
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Preferred Job Role
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="preferredRole"
+                            placeholder="Software Engineer">
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Industry
+
+                        </label>
+
+                        <select id="industry">
+
+                            <option value="">Select Industry</option>
+
+                            <option>Software Development</option>
+
+                            <option>Artificial Intelligence</option>
+
+                            <option>Data Science</option>
+
+                            <option>Cyber Security</option>
+
+                            <option>Cloud Computing</option>
+
+                            <option>UI / UX Design</option>
+
+                            <option>Digital Marketing</option>
+
+                            <option>Finance</option>
+
+                            <option>Healthcare</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="grid-2">
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Expected Salary (₹)
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="salary"
+                            placeholder="800000">
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Preferred Work Mode
+
+                        </label>
+
+                        <select id="workMode">
+
+                            <option value="">Select</option>
+
+                            <option>Remote</option>
+
+                            <option>Hybrid</option>
+
+                            <option>On-Site</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="input-group">
+
+                    <label>
+
+                        Professional Summary
+
+                    </label>
+
+                    <textarea
+                        id="summary"
+                        rows="6"
+                        placeholder="Write a short professional summary about yourself..."></textarea>
+
+                </div>
+
+
+
+                <div class="buttons">
+
+                    <button
+                        type="button"
+                        class="prev-btn">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Previous
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="next-btn">
+
+                        Next
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </section>
+                        <!--==========================================
+                        STEP 4
+            ===========================================-->
+
+            <section class="step"
+                     data-step="4">
+
+                <div class="title">
+
+                    <h2>
+
+                        Skills & Social Profiles
+
+                    </h2>
+
+                    <p>
+
+                        Showcase your technical skills and online presence.
+
+                    </p>
+
+                </div>
+
+
+                <!-- Technical Skills -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Technical Skills
+
+                    </label>
+
+                    <textarea
+
+                        id="technicalSkills"
+
+                        rows="5"
+
+                        placeholder="Java, Python, C++, HTML, CSS, JavaScript, React, Node.js..."></textarea>
+
+                </div>
+
+
+
+                <!-- Soft Skills -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Soft Skills
+
+                    </label>
+
+                    <textarea
+
+                        id="softSkills"
+
+                        rows="4"
+
+                        placeholder="Leadership, Teamwork, Communication, Problem Solving..."></textarea>
+
+                </div>
+
+
+
+                <!-- Languages -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Languages Known
+
+                    </label>
+
+                    <input
+
+                        type="text"
+
+                        id="languages"
+
+                        placeholder="English, Hindi, Punjabi">
+
+                </div>
+
+
+
+                <!-- Certifications -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Certifications
+
+                    </label>
+
+                    <textarea
+
+                        id="certifications"
+
+                        rows="5"
+
+                        placeholder="Microsoft Azure AI-900&#10;Microsoft Azure DP-900&#10;AWS Cloud Practitioner"></textarea>
+
+                </div>
+
+
+
+                <!-- Social Links -->
+
+                <div class="grid-2">
+
+                    <div class="input-group">
+
+                        <label>
+
+                            LinkedIn Profile
+
+                        </label>
+
+                        <input
+
+                            type="url"
+
+                            id="linkedin"
+
+                            placeholder="https://linkedin.com/in/username">
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label>
+
+                            GitHub Profile
+
+                        </label>
+
+                        <input
+
+                            type="url"
+
+                            id="github"
+
+                            placeholder="https://github.com/username">
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="input-group">
+
+                    <label>
+
+                        Portfolio Website
+
+                    </label>
+
+                    <input
+
+                        type="url"
+
+                        id="portfolio"
+
+                        placeholder="https://yourportfolio.com">
+
+                </div>
+
+
+
+                <div class="buttons">
+
+                    <button
+
+                        type="button"
+
+                        class="prev-btn">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Previous
+
+                    </button>
+
+                    <button
+
+                        type="button"
+
+                        class="next-btn">
+
+                        Next
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+
+
+            <!--==========================================
+                        STEP 5
+            ===========================================-->
+
+            <section class="step"
+                     data-step="5">
+
+                <div class="title">
+
+                    <h2>
+
+                        Upload Resume
+
+                    </h2>
+
+                    <p>
+
+                        Upload your latest resume for ATS analysis.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="resume-upload">
+
+                    <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+
+                    <h3>
+
+                        Upload Resume
+
+                    </h3>
+
+                    <p>
+
+                        PDF, DOC or DOCX
+
+                    </p>
+
+                    <input
+
+                        type="file"
+
+                        id="resumeFile"
+
+                        accept=".pdf,.doc,.docx"
+
+                        hidden>
+
+                    <button
+
+                        type="button"
+
+                        class="upload-btn">
+
+                        Browse Resume
+
+                    </button>
+
+                    <span id="resumeName">
+
+                        No file selected
+
+                    </span>
+
+                </div>
+
+
+
+                <!-- Projects -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Major Projects
+
+                    </label>
+
+                    <textarea
+
+                        id="projects"
+
+                        rows="6"
+
+                        placeholder="Project 1&#10;Project 2&#10;Project 3"></textarea>
+
+                </div>
+
+
+
+                <!-- Achievements -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Achievements
+
+                    </label>
+
+                    <textarea
+
+                        id="achievements"
+
+                        rows="5"
+
+                        placeholder="Hackathons, Awards, Scholarships, Publications..."></textarea>
+
+                </div>
+
+
+
+                <div class="buttons">
+
+                    <button
+
+                        type="button"
+
+                        class="prev-btn">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Previous
+
+                    </button>
+
+                    <button
+
+                        type="button"
+
+                        class="next-btn">
+
+                        Next
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+                        <!--==========================================
+                        STEP 6
+            ===========================================-->
+
+            <section class="step"
+                     data-step="6">
+
+                <div class="title">
+
+                    <h2>
+
+                        Review Your Profile
+
+                    </h2>
+
+                    <p>
+
+                        Verify your information before continuing to your dashboard.
+
+                    </p>
+
+                </div>
+
+
+                <div class="review-container">
+
+                    <div class="review-card">
+
+                        <div class="review-header">
+
+                            <img src="https://placehold.co/120x120"
+                                 id="reviewImage"
+                                 alt="Profile">
+
+                            <div>
+
+                                <h3 id="reviewName">
+
+                                    Your Name
+
+                                </h3>
+
+                                <p id="reviewRole">
+
+                                    Current Role
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="review-grid">
+
+                            <div class="review-item">
+
+                                <label>Email</label>
+
+                                <span id="reviewEmail">-</span>
+
+                            </div>
+
+                            <div class="review-item">
+
+                                <label>Phone</label>
+
+                                <span id="reviewPhone">-</span>
+
+                            </div>
+
+                            <div class="review-item">
+
+                                <label>Country</label>
+
+                                <span id="reviewCountry">-</span>
+
+                            </div>
+
+                            <div class="review-item">
+
+                                <label>City</label>
+
+                                <span id="reviewCity">-</span>
+
+                            </div>
+
+                            <div class="review-item">
+
+                                <label>College</label>
+
+                                <span id="reviewCollege">-</span>
+
+                            </div>
+
+                            <div class="review-item">
+
+                                <label>Degree</label>
+
+                                <span id="reviewDegree">-</span>
+
+                            </div>
+
+                            <div class="review-item">
+
+                                <label>Experience</label>
+
+                                <span id="reviewExperience">-</span>
+
+                            </div>
+
+                            <div class="review-item">
+
+                                <label>Skills</label>
+
+                                <span id="reviewSkills">-</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Navigation Buttons -->
+
+                <div class="buttons">
+
+                    <button
+                        type="button"
+                        class="prev-btn">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Previous
+
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="finish-btn">
+
+                        Finish Setup
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </form>
+
+    </main>
+
+</div>
+
+
+
+<!--==========================================
+            SUCCESS MODAL
+===========================================-->
+
+<div class="success-modal"
+     id="successModal">
+
+    <div class="success-card">
+
+        <div class="success-icon">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+        </div>
+
+        <h2>
+
+            Profile Completed!
+
+        </h2>
+
+        <p>
+
+            Your information has been saved successfully.
+
+        </p>
+
+        <button id="goDashboard">
+
+            Go To Dashboard
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!--==========================================
+            SCRIPTS
+===========================================-->
+
+<script src="profile-setup.js"></script>
+
+</body>
+
+</html>
+
