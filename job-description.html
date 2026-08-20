@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Description - CV Insight</title>
+
+    <link rel="stylesheet" href="job-description.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ========================= -->
+<!-- Sidebar -->
+<!-- ========================= -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-file-circle-check"></i>
+
+        <h2>CV Insight</h2>
+
+    </div>
+
+    <ul class="menu">
+
+        <li>
+
+            <a href="dashboard.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="upload-resume.html">
+
+                <i class="fa-solid fa-upload"></i>
+
+                <span>Upload Resume</span>
+
+            </a>
+
+        </li>
+
+        <li class="active">
+
+            <a href="job-description.html">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                <span>Job Description</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <span>Resume Analysis</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <span>AI Suggestions</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="templates.html">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+                <span>Resume Templates</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="builder.html">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                <span>Resume Builder</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                <span>History</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-user-tie"></i>
+
+                <span>Interview Prep</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-user"></i>
+
+                <span>Profile</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>Settings</span>
+
+            </a>
+
+        </li>
+
+    </ul>
+
+    <div class="logout">
+
+        <button>
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </button>
+
+    </div>
+
+</aside>
+
+<!-- ========================= -->
+<!-- Main Content -->
+<!-- ========================= -->
+
+<div class="main">
+
+<!-- ========================= -->
+<!-- Navbar -->
+<!-- ========================= -->
+
+<header class="topbar">
+
+<div class="left-nav">
+
+<button id="menuBtn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+<h1>
+
+Job Description
+
+</h1>
+
+</div>
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search resume, keywords...">
+
+</div>
+
+<div class="right-nav">
+
+<button id="themeBtn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<div class="notification">
+
+<i class="fa-solid fa-bell"></i>
+
+<span>4</span>
+
+</div>
+
+<div class="profile">
+
+<img src="https://i.pravatar.cc/150?img=12">
+
+<div>
+
+<h4>Bhumish</h4>
+
+<p>Student</p>
+
+</div>
+
+</div>
+
+<button class="download">
+
+<i class="fa-solid fa-download"></i>
+
+Download Report
+
+</button>
+
+</div>
+
+</header>
+
+<!-- ========================= -->
+<!-- Welcome Banner -->
+<!-- ========================= -->
+
+<section class="welcome">
+
+<div>
+
+<h2>
+
+Job Description Analyzer 💼
+
+</h2>
+
+<p>
+
+Paste a job description to extract key skills, requirements, and match them against your resume instantly.
+
+</p>
+
+</div>
+
+<div class="upload-stats-mini">
+
+    <div class="mini-stat">
+
+        <i class="fa-solid fa-clipboard-list"></i>
+
+        <div>
+
+            <h4>8</h4>
+
+            <p>JDs Analyzed</p>
+
+        </div>
+
+    </div>
+
+    <div class="mini-stat">
+
+        <i class="fa-solid fa-bullseye"></i>
+
+        <div>
+
+            <h4>91%</h4>
+
+            <p>Best Match</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- JD Input Section -->
+<!-- ========================= -->
+
+<section class="jd-grid">
+
+    <!-- Text Input Panel -->
+
+    <div class="panel jd-input-panel">
+
+        <div class="panel-header">
+
+            <h3>Paste Job Description</h3>
+
+            <div class="header-actions">
+
+                <button class="btn-clear" id="clearBtn">
+
+                    <i class="fa-solid fa-eraser"></i>
+
+                    Clear
+
+                </button>
+
+                <button class="btn-paste" id="pasteBtn">
+
+                    <i class="fa-solid fa-paste"></i>
+
+                    Paste
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Job Title Input -->
+
+        <div class="jd-field">
+
+            <label for="jobTitle">
+
+                <i class="fa-solid fa-tag"></i>
+
+                Job Title
+
+            </label>
+
+            <input type="text" id="jobTitle" placeholder="e.g. Full Stack Developer, Data Analyst...">
+
+        </div>
+
+        <!-- Company Input -->
+
+        <div class="jd-field">
+
+            <label for="companyName">
+
+                <i class="fa-solid fa-building"></i>
+
+                Company Name
+
+            </label>
+
+            <input type="text" id="companyName" placeholder="e.g. Google, Microsoft, Amazon...">
+
+        </div>
+
+        <!-- JD Textarea -->
+
+        <div class="jd-field">
+
+            <label for="jdTextarea">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                Job Description
+
+            </label>
+
+            <textarea id="jdTextarea" rows="12" placeholder="Paste the full job description here...
+
+Example:
+We are looking for a Full Stack Developer with 3+ years of experience in React, Node.js, and cloud technologies. The ideal candidate should have strong problem-solving skills, experience with RESTful APIs, and knowledge of CI/CD pipelines..."></textarea>
+
+            <div class="textarea-footer">
+
+                <span class="char-count" id="charCount">0 characters</span>
+
+                <span class="word-count" id="wordCount">0 words</span>
+
+            </div>
+
+        </div>
+
+        <!-- Analyze Button -->
+
+        <button class="btn-analyze-jd" id="analyzeJdBtn">
+
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            Analyze Job Description
+
+        </button>
+
+    </div>
+
+    <!-- Right Column -->
+
+    <div class="jd-right">
+
+        <!-- Quick Paste Templates -->
+
+        <div class="panel templates-panel">
+
+            <div class="panel-header">
+
+                <h3>Quick Templates</h3>
+
+                <i class="fa-solid fa-bookmark templates-icon"></i>
+
+            </div>
+
+            <div class="template-list">
+
+                <div class="template-item" data-title="Full Stack Developer" data-company="Tech Corp" data-jd="We are looking for a Full Stack Developer with 3+ years of experience in building scalable web applications. Required skills: React.js, Node.js, MongoDB, Express.js, REST APIs, Git, AWS/GCP. Experience with CI/CD pipelines, Docker, and Agile methodologies preferred. Strong problem-solving skills and ability to work in a fast-paced environment.">
+
+                    <div class="template-icon">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>Full Stack Developer</h4>
+
+                        <p>React, Node.js, MongoDB</p>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right template-arrow"></i>
+
+                </div>
+
+                <div class="template-item" data-title="Data Analyst" data-company="Analytics Inc" data-jd="Seeking a Data Analyst with expertise in SQL, Python, and data visualization tools like Power BI or Tableau. Must have experience with statistical analysis, data cleaning, and creating dashboards. Knowledge of machine learning basics, Excel advanced functions, and experience with large datasets is a plus. Strong communication skills required.">
+
+                    <div class="template-icon">
+
+                        <i class="fa-solid fa-chart-pie"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>Data Analyst</h4>
+
+                        <p>SQL, Python, Power BI</p>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right template-arrow"></i>
+
+                </div>
+
+                <div class="template-item" data-title="UI/UX Designer" data-company="Design Studio" data-jd="Looking for a UI/UX Designer with 2+ years of experience in designing user-centered digital products. Proficiency in Figma, Adobe XD, and prototyping tools required. Must have a strong portfolio demonstrating responsive web design, mobile app design, and design systems. Knowledge of HTML/CSS, user research, wireframing, and accessibility standards preferred.">
+
+                    <div class="template-icon">
+
+                        <i class="fa-solid fa-palette"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>UI/UX Designer</h4>
+
+                        <p>Figma, Adobe XD, Prototyping</p>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right template-arrow"></i>
+
+                </div>
+
+                <div class="template-item" data-title="DevOps Engineer" data-company="Cloud Systems" data-jd="Hiring a DevOps Engineer with strong experience in AWS, Docker, Kubernetes, and Terraform. Must have hands-on experience with CI/CD pipelines (Jenkins, GitHub Actions), monitoring tools (Prometheus, Grafana), and scripting (Bash, Python). Knowledge of microservices architecture, Linux administration, and infrastructure as code is essential.">
+
+                    <div class="template-icon">
+
+                        <i class="fa-solid fa-server"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>DevOps Engineer</h4>
+
+                        <p>AWS, Docker, Kubernetes</p>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right template-arrow"></i>
+
+                </div>
+
+                <div class="template-item" data-title="Machine Learning Engineer" data-company="AI Labs" data-jd="We need a Machine Learning Engineer with expertise in Python, TensorFlow, PyTorch, and scikit-learn. Experience with NLP, computer vision, deep learning models, and deploying ML models to production. Knowledge of cloud platforms (AWS SageMaker, GCP Vertex AI), MLOps, data pipelines, and statistical modeling required. PhD or Master's preferred.">
+
+                    <div class="template-icon">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>ML Engineer</h4>
+
+                        <p>Python, TensorFlow, PyTorch</p>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right template-arrow"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Analysis Results (hidden by default) -->
+<!-- ========================= -->
+
+<section class="analysis-results" id="analysisResults">
+
+    <!-- Extracted Info Cards -->
+
+    <section class="info-cards">
+
+        <div class="info-card">
+
+            <div class="info-card-icon blue">
+
+                <i class="fa-solid fa-tag"></i>
+
+            </div>
+
+            <div>
+
+                <p>Job Title</p>
+
+                <h3 id="resultTitle">—</h3>
+
+            </div>
+
+        </div>
+
+        <div class="info-card">
+
+            <div class="info-card-icon purple">
+
+                <i class="fa-solid fa-building"></i>
+
+            </div>
+
+            <div>
+
+                <p>Company</p>
+
+                <h3 id="resultCompany">—</h3>
+
+            </div>
+
+        </div>
+
+        <div class="info-card">
+
+            <div class="info-card-icon green">
+
+                <i class="fa-solid fa-key"></i>
+
+            </div>
+
+            <div>
+
+                <p>Keywords Found</p>
+
+                <h3 id="resultKeywords">—</h3>
+
+            </div>
+
+        </div>
+
+        <div class="info-card">
+
+            <div class="info-card-icon orange">
+
+                <i class="fa-solid fa-align-left"></i>
+
+            </div>
+
+            <div>
+
+                <p>Word Count</p>
+
+                <h3 id="resultWords">—</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Keywords Grid -->
+
+    <section class="analysis-grid">
+
+        <!-- Extracted Skills -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <h3>Extracted Skills</h3>
+
+                <span class="tag-count" id="skillCount">0 Found</span>
+
+            </div>
+
+            <div class="tags" id="skillTags">
+
+                <!-- Filled by JS -->
+
+            </div>
+
+        </div>
+
+        <!-- Required Experience -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <h3>Key Requirements</h3>
+
+                <span class="tag-count" id="reqCount">0 Found</span>
+
+            </div>
+
+            <div class="requirements-list" id="requirementsList">
+
+                <!-- Filled by JS -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Resume Match Section -->
+
+    <section class="panel match-panel">
+
+        <div class="panel-header">
+
+            <h3>Resume vs Job Description</h3>
+
+            <button id="matchResumeBtn">
+
+                <i class="fa-solid fa-code-compare"></i>
+
+                Match Resume
+
+            </button>
+
+        </div>
+
+        <div class="match-content" id="matchContent">
+
+            <div class="match-placeholder">
+
+                <i class="fa-solid fa-arrows-left-right-to-line"></i>
+
+                <h4>Click "Match Resume" to compare your latest resume with this job description</h4>
+
+                <p>We'll analyze keyword overlap, skill gaps, and give you a match score</p>
+
+            </div>
+
+        </div>
+
+        <!-- Match Results (hidden by default) -->
+
+        <div class="match-results" id="matchResults">
+
+            <div class="match-score-section">
+
+                <div class="match-circle-wrap">
+
+                    <div class="match-circle" id="matchCircle">
+
+                        <span id="matchScoreText">0%</span>
+
+                    </div>
+
+                    <p>Overall Match</p>
+
+                </div>
+
+                <div class="match-bars">
+
+                    <div class="match-bar-item">
+
+                        <div class="match-bar-label">
+
+                            <span>Skills Match</span>
+
+                            <span id="skillMatchPct">0%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div id="skillMatchBar" style="width:0%"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="match-bar-item">
+
+                        <div class="match-bar-label">
+
+                            <span>Experience Match</span>
+
+                            <span id="expMatchPct">0%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div id="expMatchBar" style="width:0%"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="match-bar-item">
+
+                        <div class="match-bar-label">
+
+                            <span>Keyword Overlap</span>
+
+                            <span id="keywordMatchPct">0%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div id="keywordMatchBar" style="width:0%"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="match-bar-item">
+
+                        <div class="match-bar-label">
+
+                            <span>Education Match</span>
+
+                            <span id="eduMatchPct">0%</span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div id="eduMatchBar" style="width:0%"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Matched & Missing -->
+
+            <div class="match-tags-grid">
+
+                <div>
+
+                    <h4><i class="fa-solid fa-circle-check" style="color:#22c55e"></i> Matched Keywords</h4>
+
+                    <div class="tags matched-tags" id="matchedTags">
+
+                        <!-- Filled by JS -->
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <h4><i class="fa-solid fa-circle-xmark" style="color:#ef4444"></i> Missing Keywords</h4>
+
+                    <div class="tags missing" id="missingTags">
+
+                        <!-- Filled by JS -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+<!-- ========================= -->
+<!-- Saved JDs Table -->
+<!-- ========================= -->
+
+<section class="panel">
+
+    <div class="panel-header">
+
+        <h3>Saved Job Descriptions</h3>
+
+        <button>View All</button>
+
+    </div>
+
+    <table class="history-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Job Title</th>
+
+                <th>Company</th>
+
+                <th>Date Added</th>
+
+                <th>Keywords</th>
+
+                <th>Match Score</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>
+
+                    <div class="file-name-cell">
+
+                        <i class="fa-solid fa-briefcase jd-table-icon"></i>
+
+                        Full Stack Developer
+
+                    </div>
+
+                </td>
+
+                <td>Google</td>
+
+                <td>Aug 16, 2026</td>
+
+                <td><span class="keyword-count-badge">24</span></td>
+
+                <td><span class="score-badge high">91%</span></td>
+
+                <td>
+
+                    <div class="action-buttons">
+
+                        <button class="action-btn view" title="View">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                        <button class="action-btn download-action" title="Load">
+
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+
+                        </button>
+
+                        <button class="action-btn delete" title="Delete">
+
+                            <i class="fa-solid fa-trash-can"></i>
+
+                        </button>
+
+                    </div>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <div class="file-name-cell">
+
+                        <i class="fa-solid fa-briefcase jd-table-icon"></i>
+
+                        Data Analyst
+
+                    </div>
+
+                </td>
+
+                <td>Microsoft</td>
+
+                <td>Aug 13, 2026</td>
+
+                <td><span class="keyword-count-badge">18</span></td>
+
+                <td><span class="score-badge medium">74%</span></td>
+
+                <td>
+
+                    <div class="action-buttons">
+
+                        <button class="action-btn view" title="View">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                        <button class="action-btn download-action" title="Load">
+
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+
+                        </button>
+
+                        <button class="action-btn delete" title="Delete">
+
+                            <i class="fa-solid fa-trash-can"></i>
+
+                        </button>
+
+                    </div>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <div class="file-name-cell">
+
+                        <i class="fa-solid fa-briefcase jd-table-icon"></i>
+
+                        UI/UX Designer
+
+                    </div>
+
+                </td>
+
+                <td>Adobe</td>
+
+                <td>Aug 10, 2026</td>
+
+                <td><span class="keyword-count-badge">21</span></td>
+
+                <td><span class="score-badge high">86%</span></td>
+
+                <td>
+
+                    <div class="action-buttons">
+
+                        <button class="action-btn view" title="View">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                        <button class="action-btn download-action" title="Load">
+
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+
+                        </button>
+
+                        <button class="action-btn delete" title="Delete">
+
+                            <i class="fa-solid fa-trash-can"></i>
+
+                        </button>
+
+                    </div>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <div class="file-name-cell">
+
+                        <i class="fa-solid fa-briefcase jd-table-icon"></i>
+
+                        Backend Engineer
+
+                    </div>
+
+                </td>
+
+                <td>Amazon</td>
+
+                <td>Aug 5, 2026</td>
+
+                <td><span class="keyword-count-badge">15</span></td>
+
+                <td><span class="score-badge low">58%</span></td>
+
+                <td>
+
+                    <div class="action-buttons">
+
+                        <button class="action-btn view" title="View">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                        <button class="action-btn download-action" title="Load">
+
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+
+                        </button>
+
+                        <button class="action-btn delete" title="Delete">
+
+                            <i class="fa-solid fa-trash-can"></i>
+
+                        </button>
+
+                    </div>
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!-- ========================= -->
+<!-- Footer -->
+<!-- ========================= -->
+
+<footer>
+
+    © 2026 CV Insight 
+
+</footer>
+
+</div>
+
+</div>
+
+<script src="job-description.js"></script>
+
+</body>
+
+</html>
