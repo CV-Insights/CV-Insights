@@ -303,7 +303,7 @@ section{
 
     display:flex;
 
-    justify-content:space-between;
+    justify-content:space-evenly;
 
     align-items:center;
 
@@ -340,13 +340,13 @@ section{
 
     display:flex;
 
-    gap:21px;
+    gap:25px;
 
 }
 
 
 .nav-links a{
-    font-size:16px;
+    font-size:20px;
     font-weight:600;
 
     transition:.3s;
@@ -357,6 +357,7 @@ section{
 .nav-links a:hover{
 
     color:var(--primary);
+    
 
 }
 
@@ -364,8 +365,8 @@ section{
 .nav-buttons{
 
     display:flex;
-
-    gap:18px;
+/* margin: 10px; */
+    gap:22px;
 
 }
 
@@ -374,11 +375,14 @@ section{
 
     color:var(--primary);
 
-    font-weight:600;
+    font-size:1.5rem;
+    font-weight: 650;
     margin:10px;
-    margin-left: 25px;
+    margin-right: 20px;
 
 }
+
+
 
 
 .signup-btn{
