@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Resume - CV Insight</title>
+
+    <link rel="stylesheet" href="upload-resume.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ========================= -->
+<!-- Sidebar -->
+<!-- ========================= -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-file-circle-check"></i>
+
+        <h2>CV Insight</h2>
+
+    </div>
+
+    <ul class="menu">
+
+        <li>
+
+            <a href="dashboard.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+        </li>
+
+        <li class="active">
+
+            <a href="upload-resume.html">
+
+                <i class="fa-solid fa-upload"></i>
+
+                <span>Upload Resume</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="job-description.html">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                <span>Job Description</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <span>Resume Analysis</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <span>AI Suggestions</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="templates.html">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+                <span>Resume Templates</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="builder.html">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                <span>Resume Builder</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                <span>History</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-user-tie"></i>
+
+                <span>Interview Prep</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-user"></i>
+
+                <span>Profile</span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>Settings</span>
+
+            </a>
+
+        </li>
+
+    </ul>
+
+    <div class="logout">
+
+        <button>
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </button>
+
+    </div>
+
+</aside>
+
+<!-- ========================= -->
+<!-- Main Content -->
+<!-- ========================= -->
+
+<div class="main">
+
+<!-- ========================= -->
+<!-- Navbar -->
+<!-- ========================= -->
+
+<header class="topbar">
+
+<div class="left-nav">
+
+<button id="menuBtn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+<h1>
+
+Upload Resume
+
+</h1>
+
+</div>
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search resume, keywords...">
+
+</div>
+
+<div class="right-nav">
+
+<button id="themeBtn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<div class="notification">
+
+<i class="fa-solid fa-bell"></i>
+
+<span>4</span>
+
+</div>
+
+<div class="profile">
+
+<img src="https://i.pravatar.cc/150?img=12">
+
+<div>
+
+<h4>Bhumish</h4>
+
+<p>Student</p>
+
+</div>
+
+</div>
+
+<button class="download">
+
+<i class="fa-solid fa-download"></i>
+
+Download Report
+
+</button>
+
+</div>
+
+</header>
+
+<!-- ========================= -->
+<!-- Upload Banner -->
+<!-- ========================= -->
+
+<section class="welcome">
+
+<div>
+
+<h2>
+
+Upload Your Resume 📄
+
+</h2>
+
+<p>
+
+Upload your resume to get an instant ATS score, keyword analysis, and AI-powered suggestions to improve your chances.
+
+</p>
+
+</div>
+
+<div class="upload-stats-mini">
+
+    <div class="mini-stat">
+
+        <i class="fa-solid fa-file-arrow-up"></i>
+
+        <div>
+
+            <h4>12</h4>
+
+            <p>Resumes Uploaded</p>
+
+        </div>
+
+    </div>
+
+    <div class="mini-stat">
+
+        <i class="fa-solid fa-star"></i>
+
+        <div>
+
+            <h4>87%</h4>
+
+            <p>Best ATS Score</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Upload Section -->
+<!-- ========================= -->
+
+<section class="upload-grid">
+
+    <!-- Drop Zone -->
+
+    <div class="panel upload-panel">
+
+        <div class="panel-header">
+
+            <h3>Upload Resume</h3>
+
+            <span class="supported-text">PDF, DOCX, TXT (Max 5MB)</span>
+
+        </div>
+
+        <div class="drop-zone" id="dropZone">
+
+            <div class="drop-zone-content">
+
+                <div class="upload-icon-wrapper">
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                </div>
+
+                <h3>Drag & Drop your resume here</h3>
+
+                <p>or click to browse from your computer</p>
+
+                <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.txt" hidden>
+
+                <button class="browse-btn" id="browseBtn">
+
+                    <i class="fa-solid fa-folder-open"></i>
+
+                    Browse Files
+
+                </button>
+
+            </div>
+
+            <!-- Progress Bar (hidden by default) -->
+
+            <div class="upload-progress" id="uploadProgress">
+
+                <div class="file-info">
+
+                    <i class="fa-solid fa-file-pdf"></i>
+
+                    <div>
+
+                        <h4 id="fileName">resume.pdf</h4>
+
+                        <p id="fileSize">2.4 MB</p>
+
+                    </div>
+
+                    <button class="remove-btn" id="removeBtn">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div class="progress-fill" id="progressFill"></div>
+
+                </div>
+
+                <p class="progress-text" id="progressText">Uploading... 0%</p>
+
+            </div>
+
+        </div>
+
+        <!-- Upload Success State -->
+
+        <div class="upload-success" id="uploadSuccess">
+
+            <div class="success-icon">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+            </div>
+
+            <h3>Upload Successful!</h3>
+
+            <p>Your resume has been uploaded and is ready for analysis.</p>
+
+            <div class="success-actions">
+
+                <button class="btn-analyze" id="analyzeBtn">
+
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+
+                    Analyze Now
+
+                </button>
+
+                <button class="btn-reupload" id="reuploadBtn">
+
+                    <i class="fa-solid fa-rotate-right"></i>
+
+                    Upload Another
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Right Column -->
+
+    <div class="upload-right">
+
+        <!-- Quick Tips -->
+
+        <div class="panel tips-panel">
+
+            <div class="panel-header">
+
+                <h3>ATS Tips</h3>
+
+                <i class="fa-solid fa-lightbulb tips-icon"></i>
+
+            </div>
+
+            <div class="tips-list">
+
+                <div class="tip-item">
+
+                    <div class="tip-number">1</div>
+
+                    <div>
+
+                        <h4>Use Standard Fonts</h4>
+
+                        <p>Stick to Arial, Calibri, or Times New Roman for best ATS compatibility.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="tip-item">
+
+                    <div class="tip-number">2</div>
+
+                    <div>
+
+                        <h4>Keep it Simple</h4>
+
+                        <p>Avoid tables, images, and complex formatting that ATS can't read.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="tip-item">
+
+                    <div class="tip-number">3</div>
+
+                    <div>
+
+                        <h4>Use Keywords</h4>
+
+                        <p>Include keywords from the job description to improve your match score.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="tip-item">
+
+                    <div class="tip-number">4</div>
+
+                    <div>
+
+                        <h4>PDF Format</h4>
+
+                        <p>Save as PDF to preserve formatting across all ATS systems.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="tip-item">
+
+                    <div class="tip-number">5</div>
+
+                    <div>
+
+                        <h4>Clear Headings</h4>
+
+                        <p>Use standard section headings like "Experience", "Education", "Skills".</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Recent Uploads -->
+<!-- ========================= -->
+
+<section class="panel">
+
+    <div class="panel-header">
+
+        <h3>Recent Uploads</h3>
+
+        <button>View All</button>
+
+    </div>
+
+    <table class="history-table">
+
+        <thead>
+
+            <tr>
+
+                <th>File Name</th>
+
+                <th>Date</th>
+
+                <th>Size</th>
+
+                <th>ATS Score</th>
+
+                <th>Status</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>
+
+                    <div class="file-name-cell">
+
+                        <i class="fa-solid fa-file-pdf pdf-icon"></i>
+
+                        resume_v3.pdf
+
+                    </div>
+
+                </td>
+
+                <td>Aug 15, 2026</td>
+
+                <td>2.4 MB</td>
+
+                <td><span class="score-badge high">87%</span></td>
+
+                <td><span class="status-badge analyzed">Analyzed</span></td>
+
+                <td>
+
+                    <div class="action-buttons">
+
+                        <button class="action-btn view" title="View">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                        <button class="action-btn download-action" title="Download">
+
+                            <i class="fa-solid fa-download"></i>
+
+                        </button>
+
+                        <button class="action-btn delete" title="Delete">
+
+                            <i class="fa-solid fa-trash-can"></i>
+
+                        </button>
+
+                    </div>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <div class="file-name-cell">
+
+                        <i class="fa-solid fa-file-word docx-icon"></i>
+
+                        cover_letter.docx
+
+                    </div>
+
+                </td>
+
+                <td>Aug 12, 2026</td>
+
+                <td>1.1 MB</td>
+
+                <td><span class="score-badge medium">72%</span></td>
+
+                <td><span class="status-badge analyzed">Analyzed</span></td>
+
+                <td>
+
+                    <div class="action-buttons">
+
+                        <button class="action-btn view" title="View">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                        <button class="action-btn download-action" title="Download">
+
+                            <i class="fa-solid fa-download"></i>
+
+                        </button>
+
+                        <button class="action-btn delete" title="Delete">
+
+                            <i class="fa-solid fa-trash-can"></i>
+
+                        </button>
+
+                    </div>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <div class="file-name-cell">
+
+                        <i class="fa-solid fa-file-pdf pdf-icon"></i>
+
+                        resume_v2.pdf
+
+                    </div>
+
+                </td>
+
+                <td>Aug 8, 2026</td>
+
+                <td>1.8 MB</td>
+
+                <td><span class="score-badge high">91%</span></td>
+
+                <td><span class="status-badge analyzed">Analyzed</span></td>
+
+                <td>
+
+                    <div class="action-buttons">
+
+                        <button class="action-btn view" title="View">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                        <button class="action-btn download-action" title="Download">
+
+                            <i class="fa-solid fa-download"></i>
+
+                        </button>
+
+                        <button class="action-btn delete" title="Delete">
+
+                            <i class="fa-solid fa-trash-can"></i>
+
+                        </button>
+
+                    </div>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <div class="file-name-cell">
+
+                        <i class="fa-solid fa-file-pdf pdf-icon"></i>
+
+                        resume_old.pdf
+
+                    </div>
+
+                </td>
+
+                <td>Jul 28, 2026</td>
+
+                <td>3.2 MB</td>
+
+                <td><span class="score-badge low">54%</span></td>
+
+                <td><span class="status-badge pending">Pending</span></td>
+
+                <td>
+
+                    <div class="action-buttons">
+
+                        <button class="action-btn view" title="View">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                        <button class="action-btn download-action" title="Download">
+
+                            <i class="fa-solid fa-download"></i>
+
+                        </button>
+
+                        <button class="action-btn delete" title="Delete">
+
+                            <i class="fa-solid fa-trash-can"></i>
+
+                        </button>
+
+                    </div>
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!-- ========================= -->
+<!-- Footer -->
+<!-- ========================= -->
+
+<footer>
+
+    © 2026 CV Insight 
+
+</footer>
+
+</div>
+
+</div>
+
+<script src="upload-resume.js"></script>
+
+</body>
+
+</html>
