@@ -1,10 +1,4 @@
-/*=========================================
- CV Insight — Upload Resume JavaScript
-=========================================*/
 
-// ================================
-// DOM Elements
-// ================================
 
 const body = document.body;
 const sidebar = document.querySelector(".sidebar");
