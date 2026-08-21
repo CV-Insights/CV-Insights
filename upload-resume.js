@@ -1,10 +1,4 @@
-/*=========================================
- CV Insight — Upload Resume JavaScript
-=========================================*/
 
-// ================================
-// DOM Elements
-// ================================
 
 const body = document.body;
 const sidebar = document.querySelector(".sidebar");
@@ -26,9 +20,7 @@ const uploadSuccess = document.getElementById("uploadSuccess");
 const analyzeBtn = document.getElementById("analyzeBtn");
 const reuploadBtn = document.getElementById("reuploadBtn");
 
-// ================================
-// Sidebar Toggle
-// ================================
+
 
 if (menuBtn) {
 
@@ -40,9 +32,7 @@ if (menuBtn) {
 
 }
 
-// ================================
-// Dark Mode
-// ================================
+
 
 function loadTheme() {
 
@@ -93,9 +83,6 @@ if (themeBtn) {
 
 }
 
-// ================================
-// Active Sidebar Menu
-// ================================
 
 const menuItems =
 document.querySelectorAll(".menu li");
@@ -116,9 +103,7 @@ menuItems.forEach(item => {
 
 });
 
-// ================================
-// Smooth Scroll (prevent # jumps)
-// ================================
+
 
 document.querySelectorAll("a").forEach(link => {
 
@@ -134,9 +119,7 @@ document.querySelectorAll("a").forEach(link => {
 
 });
 
-// ================================
-// Panel Animation on Load
-// ================================
+
 
 const panels = document.querySelectorAll(".panel");
 
@@ -162,9 +145,6 @@ window.addEventListener("load", () => {
 
 });
 
-// ================================
-// Scroll Reveal Animation
-// ================================
 
 const revealItems = document.querySelectorAll(
 
@@ -210,8 +190,7 @@ revealItems.forEach((item) => {
 
 });
 
-// ================================
-// File Upload — Drag & Drop
+
 // ================================
 
 // Prevent default drag behaviors on the page
@@ -228,7 +207,7 @@ revealItems.forEach((item) => {
 
 });
 
-// Highlight drop zone on drag
+
 
 if (dropZone) {
 
@@ -252,7 +231,6 @@ if (dropZone) {
 
     });
 
-    // Handle file drop
 
     dropZone.addEventListener("drop", (e) => {
 
@@ -266,7 +244,6 @@ if (dropZone) {
 
     });
 
-    // Click to browse
 
     dropZone.addEventListener("click", (e) => {
 
@@ -279,7 +256,7 @@ if (dropZone) {
 
 }
 
-// Browse button click
+
 
 if (browseBtn) {
 
@@ -307,11 +284,7 @@ if (fileInput) {
 
     });
 
-}
 
-// ================================
-// Handle File Selection
-// ================================
 
 function handleFile(file) {
 
@@ -388,9 +361,8 @@ function handleFile(file) {
 
 }
 
-// ================================
+
 // Simulate Upload Progress
-// ================================
 
 function simulateUpload() {
 
@@ -426,9 +398,7 @@ function simulateUpload() {
 
 }
 
-// ================================
-// Show Upload Success
-// ================================
+
 
 function showUploadSuccess() {
 
@@ -440,9 +410,7 @@ function showUploadSuccess() {
 
 }
 
-// ================================
-// Remove File
-// ================================
+
 
 if (removeBtn) {
 
@@ -456,9 +424,7 @@ if (removeBtn) {
 
 }
 
-// ================================
-// Re-upload Button
-// ================================
+
 
 if (reuploadBtn) {
 
@@ -470,9 +436,8 @@ if (reuploadBtn) {
 
 }
 
-// ================================
 // Analyze Button
-// ================================
+
 
 if (analyzeBtn) {
 
@@ -496,9 +461,8 @@ if (analyzeBtn) {
 
 }
 
-// ================================
 // Reset Upload State
-// ================================
+
 
 function resetUpload() {
 
@@ -526,9 +490,7 @@ function resetUpload() {
 
 }
 
-// ================================
-// Format File Size
-// ================================
+
 
 function formatFileSize(bytes) {
 
@@ -542,9 +504,7 @@ function formatFileSize(bytes) {
 
 }
 
-// ================================
-// Toast Notification
-// ================================
+
 
 function showToast(message, type) {
 
@@ -592,7 +552,7 @@ function showToast(message, type) {
 
     document.body.appendChild(toast);
 
-    // Add animation keyframe if not exists
+
 
     if (!document.getElementById("toastStyle")) {
 
@@ -616,8 +576,6 @@ function showToast(message, type) {
         document.head.appendChild(style);
 
     }
-
-    // Auto remove after 3 seconds
 
     setTimeout(() => {
 
@@ -657,9 +615,7 @@ tableRows.forEach(row => {
 
 });
 
-// ================================
-// Delete Button in Table
-// ================================
+
 
 const deleteButtons = document.querySelectorAll(".action-btn.delete");
 
@@ -687,9 +643,6 @@ deleteButtons.forEach(btn => {
 
 });
 
-// ================================
-// View Button in Table
-// ================================
 
 const viewButtons = document.querySelectorAll(".action-btn.view");
 
@@ -707,9 +660,7 @@ viewButtons.forEach(btn => {
 
 });
 
-// ================================
-// Download Button in Table
-// ================================
+
 
 const downloadButtons = document.querySelectorAll(".action-btn.download-action");
 
@@ -727,9 +678,7 @@ downloadButtons.forEach(btn => {
 
 });
 
-// ================================
-// Console Message
-// ================================
+
 
 console.log(
 "%cCV Insight Upload Page Loaded Successfully!",
