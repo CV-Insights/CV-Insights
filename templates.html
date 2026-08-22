@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Insight | Resume Templates</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="templates.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+     
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <h2>CV Insight</h2>
+            </div>
+
+            <ul class="menu">
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="upload-resume.html">
+                        <i class="fa-solid fa-upload"></i>
+                        <span>Upload Resume</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="job-description.html">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Job Description</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Resume Analysis</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <span>AI Suggestions</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="templates.html">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Resume Templates</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="builder.html">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <span>Resume Builder</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <span>Interview Prep</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile-setup.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="logout">
+                <button onclick="window.location.href='login.html'">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </button>
+            </div>
+        </aside>
+
+        
+        <div class="main">
+
+            <!-- Topbar -->
+            <header class="topbar">
+                <div class="left-nav">
+                    <button id="menuBtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <h1>Resume Templates</h1>
+                </div>
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="templateSearch" placeholder="Search templates (e.g. Tech, Minimalist, Executive)...">
+                </div>
+
+                <div class="right-nav">
+                    <button id="themeBtn" title="Toggle Dark/Light Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+
+                    <div class="notification" title="Notifications">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>4</span>
+                    </div>
+
+                    <div class="profile" onclick="window.location.href='profile-setup.html'" style="cursor: pointer;">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Avatar">
+                        <div>
+                            <h4>Bhumish</h4>
+                            <p>Student</p>
+                        </div>
+                    </div>
+
+                    <button class="download" onclick="window.location.href='builder.html'">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        Create Resume
+                    </button>
+                </div>
+            </header>
+
+        
+            <section class="welcome">
+                <div>
+                    <h2>ATS-Optimized Templates 📄✨</h2>
+                    <p>Select from recruiter-approved, machine-parsable resume designs engineered to pass Applicant Tracking Systems.</p>
+                </div>
+                <button onclick="window.location.href='builder.html'">
+                    <i class="fa-solid fa-plus"></i>
+                    Open Resume Builder
+                </button>
+            </section>
+
+            <!-- Quick Stat Cards Row -->
+            <div class="dashboard-stats-grid">
+                <div class="stat-card border-purple">
+                    <div class="stat-info">
+                        <span>Total Templates</span>
+                        <h3>8 Designs</h3>
+                    </div>
+                    <div class="stat-icon purple-icon"><i class="fa-solid fa-layer-group"></i></div>
+                </div>
+
+                <div class="stat-card border-green">
+                    <div class="stat-info">
+                        <span>ATS Parse Rate</span>
+                        <h3>98% - 100%</h3>
+                    </div>
+                    <div class="stat-icon green-icon"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
+
+                <div class="stat-card border-blue">
+                    <div class="stat-info">
+                        <span>Supported Formats</span>
+                        <h3>PDF & JSON</h3>
+                    </div>
+                    <div class="stat-icon blue-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                </div>
+
+                <div class="stat-card border-amber">
+                    <div class="stat-info">
+                        <span>Compatibility</span>
+                        <h3>All ATS Bots</h3>
+                    </div>
+                    <div class="stat-icon amber-icon"><i class="fa-solid fa-robot"></i></div>
+                </div>
+            </div>
+
+        
+            <div class="templates-filter-panel">
+                <div class="category-pills">
+                    <button class="filter-pill active" data-category="all">
+                        <i class="fa-solid fa-grid-2"></i> All Templates
+                    </button>
+                    <button class="filter-pill" data-category="tech">
+                        <i class="fa-solid fa-code"></i> Tech & Software
+                    </button>
+                    <button class="filter-pill" data-category="clean">
+                        <i class="fa-solid fa-feather"></i> Modern Clean
+                    </button>
+                    <button class="filter-pill" data-category="executive">
+                        <i class="fa-solid fa-briefcase"></i> Executive
+                    </button>
+                    <button class="filter-pill" data-category="creative">
+                        <i class="fa-solid fa-palette"></i> Creative & Design
+                    </button>
+                    <button class="filter-pill" data-category="minimalist">
+                        <i class="fa-solid fa-align-left"></i> Simple / Minimalist
+                    </button>
+                    <button class="filter-pill" data-category="entry">
+                        <i class="fa-solid fa-graduation-cap"></i> Student / Entry Level
+                    </button>
+                </div>
+
+                <div class="sort-control">
+                    <label for="sortSelect"><i class="fa-solid fa-arrow-down-short-wide"></i> Sort:</label>
+                    <select id="sortSelect">
+                        <option value="popular">Most Popular</option>
+                        <option value="ats-score">Highest ATS Score</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+
+           
+            <div class="templates-container-panel">
+                <div class="panel-header">
+                    <div>
+                        <h2>Available Templates (<span id="templateCount">8</span>)</h2>
+                        <p class="sub-text">Click any template to customize in the interactive resume builder</p>
+                    </div>
+                </div>
+
+                <div class="templates-grid" id="templatesGrid">
+                    <!-- Populated dynamically by templates.js -->
+                </div>
+
+            
+                <div class="empty-state" id="emptyState" style="display: none;">
+                    <i class="fa-solid fa-file-circle-question"></i>
+                    <h3>No Templates Found</h3>
+                    <p>Try searching for a different keyword or reset filters.</p>
+                    <button class="btn-dash-primary" id="resetFiltersBtn">Reset Filters</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="modal-overlay" id="previewModal">
+        <div class="modal-card">
+            <button class="modal-close" id="modalCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body">
+                <!-- Left: Mini Resume Canvas -->
+                <div class="modal-preview-canvas" id="modalResumePreview"></div>
+
+                <!-- Right: Info & Actions -->
+                <div class="modal-details">
+                    <span class="modal-badge" id="modalCategoryBadge">Tech & Software</span>
+                    <h2 id="modalTemplateTitle">Modern Tech Resume</h2>
+                    <p id="modalTemplateDesc">Engineered for tech professionals, full stack developers, and cloud engineers.</p>
+
+                    <div class="modal-score-box">
+                        <div class="score-circle-wrapper">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle-progress" id="modalScoreCircle" stroke-dasharray="98, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="20.35" class="percentage" id="modalScoreText">98%</text>
+                            </svg>
+                        </div>
+                        <div class="score-info">
+                            <h4>ATS Score Guarantee</h4>
+                            <p>Taleo, Workday, Greenhouse & Lever compliant.</p>
+                        </div>
+                    </div>
+
+                    <!-- Color Swatches -->
+                    <div class="color-picker-group">
+                        <label>Accent Color:</label>
+                        <div class="modal-color-swatches" id="modalColorSwatches"></div>
+                    </div>
+
+                    <!-- Highlights List -->
+                    <div class="modal-highlights">
+                        <h4>Template Highlights</h4>
+                        <ul id="modalHighlightsList"></ul>
+                    </div>
+
+                    <a href="builder.html" id="modalUseTemplateBtn" class="btn-dash-primary modal-action-btn">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Use This Template
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="templates.js"></script>
+</body>
+
+</html>
