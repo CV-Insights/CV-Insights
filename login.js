@@ -43,9 +43,8 @@ alert("Please fill all fields.");
 return;
 
 }
-
+else if(email=="cvInsight@gmail.com" && pass==12345678){
 this.innerHTML="Logging In...";
-
 setTimeout(()=>{
 
     const profileCompleted =
@@ -58,9 +57,19 @@ setTimeout(()=>{
     }
     else{
 
-        window.location.href = "profile-setup.html";
+        window.location.href = "dashboard.html";
 
     }
 
-},1200);
+},1000);
+
+}
+else{
+    alert("wrong email or password please check again");
+    return;
+}
+
+
+
+
 };
