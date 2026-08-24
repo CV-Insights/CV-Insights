@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV Insight - Interview Prep</title>
+
+    <link rel="stylesheet" href="interview-prep.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-file-circle-check"></i>
+            </div>
+
+            <h2>CV <span>Insight</span></h2>
+
+        </div>
+
+
+        <nav>
+
+            <!-- DASHBOARD -->
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+
+            <a href="#">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                Upload Resume
+            </a>
+
+
+            <a href="#">
+                <i class="fa-solid fa-briefcase"></i>
+                Job Description
+            </a>
+
+
+            <a href="#">
+                <i class="fa-solid fa-chart-line"></i>
+                Resume Analysis
+            </a>
+
+
+            <a href="#">
+                <i class="fa-solid fa-lightbulb"></i>
+                AI Suggestions
+            </a>
+
+
+            <a href="#">
+                <i class="fa-solid fa-layer-group"></i>
+                Resume Templates
+            </a>
+
+
+            <a href="#">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                History
+            </a>
+
+
+            <!-- INTERVIEW PREP ACTIVE -->
+            <a href="interview-prep.html" class="active">
+                <i class="fa-solid fa-user-group"></i>
+                Interview Prep
+            </a>
+
+
+            <a href="#">
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- TOP NAVBAR -->
+
+        <header class="topbar">
+
+            <div class="menu-title">
+
+                <button class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <h1>Interview Prep</h1>
+
+            </div>
+
+
+            <div class="top-actions">
+
+
+                <div class="notification">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <span>4</span>
+
+                </div>
+
+
+                <div class="profile-box">
+
+                    <div class="profile-image">
+
+                        <img
+                            src="https://i.pravatar.cc/100?img=12"
+                            alt="Profile">
+
+                    </div>
+
+
+                    <div>
+
+                        <h4>Bhumish</h4>
+
+                        <p>Student</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section class="hero-section">
+
+            <div>
+
+                <span class="small-tag">
+
+                    <i class="fa-solid fa-sparkles"></i>
+
+                    AI POWERED INTERVIEW PREPARATION
+
+                </span>
+
+
+                <h2>
+
+                    Practice. Improve.
+
+                    <span>Get Hired.</span>
+
+                </h2>
+
+
+                <p>
+
+                    Prepare for your next interview with HR, technical,
+                    MCQ and subjective questions personalized for your role.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="hero-right">
+
+                <div class="hero-stat">
+
+                    <i class="fa-solid fa-fire"></i>
+
+
+                    <div>
+
+                        <span>Current Progress</span>
+
+                        <strong id="progressText">0%</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PREP STEPS ================= -->
+
+        <section class="steps-section">
+
+
+            <!-- STEP 1 -->
+
+            <div class="step active-step" id="step1">
+
+                <div class="step-number">1</div>
+
+
+                <div>
+
+                    <h4>HR Round</h4>
+
+                    <p>Personal & behavioral questions</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+
+            <!-- STEP 2 -->
+
+            <div class="step" id="step2">
+
+                <div class="step-number">2</div>
+
+
+                <div>
+
+                    <h4>Job Role</h4>
+
+                    <p>Role-based questions</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+
+            <!-- STEP 3 -->
+
+            <div class="step" id="step3">
+
+                <div class="step-number">3</div>
+
+
+                <div>
+
+                    <h4>MCQ Test</h4>
+
+                    <p>Test your knowledge</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+
+            <!-- STEP 4 -->
+
+            <div class="step" id="step4">
+
+                <div class="step-number">4</div>
+
+
+                <div>
+
+                    <h4>Subjective</h4>
+
+                    <p>Detailed answers</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= QUESTION AREA ================= -->
+
+        <section class="question-layout">
+
+
+            <!-- LEFT QUESTION CARD -->
+
+            <div class="question-card">
+
+
+                <!-- QUESTION HEADER -->
+
+                <div class="question-header">
+
+
+                    <div>
+
+                        <span
+                            class="question-category"
+                            id="category">
+
+                            HR ROUND
+
+                        </span>
+
+
+                        <p id="questionCounter">
+
+                            Question 1 of 10
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="question-progress">
+
+                        <div class="progress-circle">
+
+                            <span id="progressNumber">
+
+                                10%
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- QUESTION CONTENT -->
+
+                <div class="question-content">
+
+
+                    <h2 id="questionText">
+
+                        Tell me about yourself.
+
+                    </h2>
+
+
+
+                    <p
+                        class="question-tip"
+                        id="questionTip">
+
+                        Tip: Focus on your education,
+                        skills, experience and career goals.
+
+                    </p>
+
+
+
+                    <!-- SUBJECTIVE ANSWER -->
+
+                    <div id="subjectiveArea">
+
+
+                        <textarea
+                            id="answerInput"
+                            placeholder="Type your answer here...">
+                        </textarea>
+
+
+                        <div class="word-count">
+
+                            <span id="wordCount">0</span>
+
+                            words
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- MCQ OPTIONS -->
+
+                    <div
+                        id="mcqArea"
+                        class="hidden">
+
+
+                        <!-- OPTION A -->
+
+                        <div
+                            class="option"
+                            data-option="0">
+
+                            <span>A</span>
+
+                            <p id="option0"></p>
+
+                        </div>
+
+
+
+                        <!-- OPTION B -->
+
+                        <div
+                            class="option"
+                            data-option="1">
+
+                            <span>B</span>
+
+                            <p id="option1"></p>
+
+                        </div>
+
+
+
+                        <!-- OPTION C -->
+
+                        <div
+                            class="option"
+                            data-option="2">
+
+                            <span>C</span>
+
+                            <p id="option2"></p>
+
+                        </div>
+
+
+
+                        <!-- OPTION D -->
+
+                        <div
+                            class="option"
+                            data-option="3">
+
+                            <span>D</span>
+
+                            <p id="option3"></p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- QUESTION BUTTONS -->
+
+                <div class="question-buttons">
+
+
+                    <button
+                        id="prevBtn"
+                        class="secondary-btn">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Previous
+
+                    </button>
+
+
+
+                    <button
+                        id="nextBtn"
+                        class="primary-btn">
+
+                        Save & Next
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= RIGHT PANEL ================= -->
+
+            <div class="right-panel">
+
+
+                <!-- SESSION PERFORMANCE -->
+
+                <div class="mini-card">
+
+
+                    <h3>Session Performance</h3>
+
+
+
+                    <!-- HR -->
+
+                    <div class="performance-item">
+
+
+                        <div class="performance-icon purple">
+
+                            <i class="fa-solid fa-user-tie"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>HR Questions</span>
+
+                            <strong id="hrStatus">
+
+                                0 / 3
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- JOB ROLE -->
+
+                    <div class="performance-item">
+
+
+                        <div class="performance-icon blue">
+
+                            <i class="fa-solid fa-briefcase"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>Role Questions</span>
+
+                            <strong id="roleStatus">
+
+                                0 / 2
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- MCQ -->
+
+                    <div class="performance-item">
+
+
+                        <div class="performance-icon orange">
+
+                            <i class="fa-solid fa-list-check"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>MCQs</span>
+
+                            <strong id="mcqStatus">
+
+                                0 / 3
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- SUBJECTIVE -->
+
+                    <div class="performance-item">
+
+
+                        <div class="performance-icon green">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>Subjective</span>
+
+                            <strong id="subjectiveStatus">
+
+                                0 / 2
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- QUICK TIP -->
+
+                <div class="tips-card">
+
+
+                    <div class="tips-header">
+
+                        <i class="fa-solid fa-lightbulb"></i>
+
+                        <h3>Quick Tip</h3>
+
+                    </div>
+
+
+                    <p id="sideTip">
+
+                        Keep your answer structured and relevant.
+                        Try using real examples.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- CURRENT SCORE -->
+
+                <div class="score-preview">
+
+
+                    <p>Current Score</p>
+
+
+                    <h2 id="liveScore">
+
+                        0<span>%</span>
+
+                    </h2>
+
+
+                    <small>
+
+                        Complete the questions to get
+                        your final evaluation.
+
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= RESULT MODAL ================= -->
+
+    <div
+        class="modal hidden"
+        id="resultModal">
+
+
+        <div class="result-card">
+
+
+            <!-- CLOSE -->
+
+            <button
+                class="close-modal"
+                id="closeModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+
+            <!-- TROPHY -->
+
+            <div class="result-icon">
+
+                <i class="fa-solid fa-trophy"></i>
+
+            </div>
+
+
+
+            <p>INTERVIEW PERFORMANCE</p>
+
+
+            <h2>Your Final Score</h2>
+
+
+
+            <div
+                class="final-score"
+                id="finalScore">
+
+                82%
+
+            </div>
+
+
+
+            <div
+                class="score-message"
+                id="scoreMessage">
+
+                Great job! You are on the right track.
+
+            </div>
+
+
+
+            <!-- SCORE BREAKDOWN -->
+
+            <div class="score-breakdown">
+
+
+                <div>
+
+                    <span>HR</span>
+
+                    <strong id="finalHrScore">
+
+                        0%
+
+                    </strong>
+
+                </div>
+
+
+
+                <div>
+
+                    <span>Role</span>
+
+                    <strong id="finalRoleScore">
+
+                        0%
+
+                    </strong>
+
+                </div>
+
+
+
+                <div>
+
+                    <span>MCQ</span>
+
+                    <strong id="finalMcqScore">
+
+                        0%
+
+                    </strong>
+
+                </div>
+
+
+
+                <div>
+
+                    <span>Subjective</span>
+
+                    <strong id="finalSubjectiveScore">
+
+                        0%
+
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- RESTART -->
+
+            <button
+                class="primary-btn restart-btn"
+                id="restartBtn">
+
+                <i class="fa-solid fa-rotate-right"></i>
+
+                Practice Again
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="interview-prep.js"></script>
+
+
+</body>
+</html>

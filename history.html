@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>CV Insight - History</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="history.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-file-circle-check"></i>
+            </div>
+
+            <h2>
+                CV <span>Insight</span>
+            </h2>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav>
+
+            <a href="dashboard.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+
+                Upload Resume
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                Job Description
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Resume Analysis
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                AI Suggestions
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+                Resume Templates
+
+            </a>
+
+
+            <!-- HISTORY ACTIVE -->
+
+            <a href="history.html"
+                class="active">
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                History
+
+            </a>
+
+
+            <a href="interview-prep.html">
+
+                <i class="fa-solid fa-user-group"></i>
+
+                Interview Prep
+
+            </a>
+
+
+            <a href="#">
+
+                <i class="fa-solid fa-user"></i>
+
+                Profile
+
+            </a>
+
+        </nav>
+
+
+        <!-- SETTINGS -->
+
+        <div class="sidebar-bottom">
+
+            <a href="#">
+
+                <i class="fa-solid fa-gear"></i>
+
+                Settings
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+
+            <div class="menu-title">
+
+                <button class="menu-btn">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <div>
+
+                    <h1>History</h1>
+
+                    <p>
+                        Track your resume analysis
+                        and interview progress.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="top-actions">
+
+
+                <!-- NOTIFICATION -->
+
+                <div class="notification">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <span>4</span>
+
+                </div>
+
+
+                <!-- PROFILE -->
+
+                <div class="profile-box">
+
+
+                    <div class="profile-image">
+
+                        <img
+                            src="https://i.pravatar.cc/100?img=12"
+                            alt="Profile">
+
+                    </div>
+
+
+                    <div>
+
+                        <h4>Bhumish</h4>
+
+                        <p>Student</p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="history-hero">
+
+
+            <div class="hero-content">
+
+
+                <span class="small-tag">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    TRACK YOUR PROGRESS
+
+                </span>
+
+
+                <h2>
+
+                    Every Attempt.
+
+                    <span>Every Improvement.</span>
+
+                </h2>
+
+
+                <p>
+
+                    Review your previous resume analyses,
+                    interview practice sessions and track
+                    how your profile has improved over time.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="hero-icon">
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================= STATS ================= -->
+
+        <section class="stats-grid">
+
+
+            <!-- TOTAL ANALYSES -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                </div>
+
+
+                <div>
+
+                    <p>Total Analyses</p>
+
+                    <h3 id="totalAnalyses">
+
+                        8
+
+                    </h3>
+
+
+                    <span>
+
+                        <i class="fa-solid fa-arrow-up"></i>
+
+                        3 this month
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BEST ATS SCORE -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon green">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                </div>
+
+
+                <div>
+
+                    <p>Best ATS Score</p>
+
+                    <h3 id="bestScore">
+
+                        89%
+
+                    </h3>
+
+
+                    <span class="green-text">
+
+                        Highest score achieved
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- INTERVIEWS -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue">
+
+                    <i class="fa-solid fa-user-tie"></i>
+
+                </div>
+
+
+                <div>
+
+                    <p>Interview Sessions</p>
+
+                    <h3 id="totalInterviews">
+
+                        5
+
+                    </h3>
+
+
+                    <span class="blue-text">
+
+                        Practice completed
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- IMPROVEMENT -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon orange">
+
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+
+                </div>
+
+
+                <div>
+
+                    <p>Overall Improvement</p>
+
+                    <h3>
+
+                        +18%
+
+                    </h3>
+
+
+                    <span class="orange-text">
+
+                        Since first analysis
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================= HISTORY CONTROLS ================= -->
+
+        <section class="history-controls">
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search your history...">
+
+            </div>
+
+
+
+            <!-- FILTER BUTTONS -->
+
+            <div class="filter-buttons">
+
+
+                <button
+                    class="filter-btn active-filter"
+                    data-filter="all">
+
+                    All
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="resume">
+
+                    Resume Analysis
+
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="interview">
+
+                    Interview Prep
+
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================= HISTORY LIST ================= -->
+
+        <section class="history-section">
+
+
+            <div class="section-heading">
+
+
+                <div>
+
+                    <h2>Recent Activity</h2>
+
+                    <p>
+
+                        Your latest CV and interview
+                        preparation activities.
+
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="clear-btn"
+                    id="clearAllBtn">
+
+                    <i class="fa-solid fa-trash"></i>
+
+                    Clear All
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- HISTORY CONTAINER -->
+
+            <div
+                class="history-list"
+                id="historyList">
+
+
+                <!-- ================= ITEM 1 ================= -->
+
+                <div
+                    class="history-item"
+                    data-type="resume"
+                    data-name="Software Engineer Resume">
+
+
+                    <div class="history-left">
+
+
+                        <div class="activity-icon resume-icon">
+
+                            <i class="fa-solid fa-file-lines"></i>
+
+                        </div>
+
+
+                        <div class="history-info">
+
+                            <h3>
+                                Software Engineer Resume
+                            </h3>
+
+
+                            <p>
+
+                                Resume Analysis •
+                                Aug 20, 2026
+
+                            </p>
+
+
+                            <div class="tags">
+
+                                <span>
+                                    Java
+                                </span>
+
+                                <span>
+                                    DSA
+                                </span>
+
+                                <span>
+                                    SQL
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="history-right">
+
+
+                        <div class="score-box good">
+
+                            <span>ATS Score</span>
+
+                            <strong>89%</strong>
+
+                        </div>
+
+
+                        <button
+                            class="view-btn"
+                            data-title="Software Engineer Resume"
+                            data-score="89%"
+                            data-type="Resume Analysis">
+
+                            View Details
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                        <button
+                            class="delete-btn">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ================= ITEM 2 ================= -->
+
+                <div
+                    class="history-item"
+                    data-type="interview"
+                    data-name="Software Developer Interview">
+
+
+                    <div class="history-left">
+
+
+                        <div class="activity-icon interview-icon">
+
+                            <i class="fa-solid fa-user-tie"></i>
+
+                        </div>
+
+
+                        <div class="history-info">
+
+                            <h3>
+                                Software Developer Interview
+                            </h3>
+
+
+                            <p>
+
+                                Interview Prep •
+                                Aug 19, 2026
+
+                            </p>
+
+
+                            <div class="tags">
+
+                                <span>
+                                    HR
+                                </span>
+
+                                <span>
+                                    Technical
+                                </span>
+
+                                <span>
+                                    MCQ
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="history-right">
+
+
+                        <div class="score-box purple-score">
+
+                            <span>Interview Score</span>
+
+                            <strong>82%</strong>
+
+                        </div>
+
+
+                        <button
+                            class="view-btn"
+                            data-title="Software Developer Interview"
+                            data-score="82%"
+                            data-type="Interview Prep">
+
+                            View Details
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                        <button
+                            class="delete-btn">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ================= ITEM 3 ================= -->
+
+                <div
+                    class="history-item"
+                    data-type="resume"
+                    data-name="AI ML Resume">
+
+
+                    <div class="history-left">
+
+
+                        <div class="activity-icon resume-icon">
+
+                            <i class="fa-solid fa-file-lines"></i>
+
+                        </div>
+
+
+                        <div class="history-info">
+
+                            <h3>
+                                AI / ML Resume
+                            </h3>
+
+
+                            <p>
+
+                                Resume Analysis •
+                                Aug 17, 2026
+
+                            </p>
+
+
+                            <div class="tags">
+
+                                <span>
+                                    Python
+                                </span>
+
+                                <span>
+                                    Machine Learning
+                                </span>
+
+                                <span>
+                                    TensorFlow
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="history-right">
+
+
+                        <div class="score-box average">
+
+                            <span>ATS Score</span>
+
+                            <strong>74%</strong>
+
+                        </div>
+
+
+                        <button
+                            class="view-btn"
+                            data-title="AI / ML Resume"
+                            data-score="74%"
+                            data-type="Resume Analysis">
+
+                            View Details
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                        <button
+                            class="delete-btn">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ================= ITEM 4 ================= -->
+
+                <div
+                    class="history-item"
+                    data-type="interview"
+                    data-name="Frontend Developer Interview">
+
+
+                    <div class="history-left">
+
+
+                        <div class="activity-icon interview-icon">
+
+                            <i class="fa-solid fa-user-tie"></i>
+
+                        </div>
+
+
+                        <div class="history-info">
+
+                            <h3>
+                                Frontend Developer Interview
+                            </h3>
+
+
+                            <p>
+
+                                Interview Prep •
+                                Aug 15, 2026
+
+                            </p>
+
+
+                            <div class="tags">
+
+                                <span>
+                                    HTML
+                                </span>
+
+                                <span>
+                                    CSS
+                                </span>
+
+                                <span>
+                                    JavaScript
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="history-right">
+
+
+                        <div class="score-box purple-score">
+
+                            <span>Interview Score</span>
+
+                            <strong>76%</strong>
+
+                        </div>
+
+
+                        <button
+                            class="view-btn"
+                            data-title="Frontend Developer Interview"
+                            data-score="76%"
+                            data-type="Interview Prep">
+
+                            View Details
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                        <button
+                            class="delete-btn">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ================= ITEM 5 ================= -->
+
+                <div
+                    class="history-item"
+                    data-type="resume"
+                    data-name="Data Analyst Resume">
+
+
+                    <div class="history-left">
+
+
+                        <div class="activity-icon resume-icon">
+
+                            <i class="fa-solid fa-file-lines"></i>
+
+                        </div>
+
+
+                        <div class="history-info">
+
+                            <h3>
+                                Data Analyst Resume
+                            </h3>
+
+
+                            <p>
+
+                                Resume Analysis •
+                                Aug 12, 2026
+
+                            </p>
+
+
+                            <div class="tags">
+
+                                <span>
+                                    Excel
+                                </span>
+
+                                <span>
+                                    SQL
+                                </span>
+
+                                <span>
+                                    Power BI
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="history-right">
+
+
+                        <div class="score-box average">
+
+                            <span>ATS Score</span>
+
+                            <strong>68%</strong>
+
+                        </div>
+
+
+                        <button
+                            class="view-btn"
+                            data-title="Data Analyst Resume"
+                            data-score="68%"
+                            data-type="Resume Analysis">
+
+                            View Details
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                        <button
+                            class="delete-btn">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- EMPTY STATE -->
+
+            <div
+                class="empty-state hidden"
+                id="emptyState">
+
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+
+                <h2>No History Found</h2>
+
+
+                <p>
+
+                    No matching activity was found.
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= DETAILS MODAL ================= -->
+
+    <div
+        class="modal hidden"
+        id="detailsModal">
+
+
+        <div class="details-modal-card">
+
+
+            <button
+                class="close-modal"
+                id="closeModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="modal-icon">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+            </div>
+
+
+            <span
+                class="modal-type"
+                id="modalType">
+
+                Resume Analysis
+
+            </span>
+
+
+            <h2 id="modalTitle">
+
+                Software Engineer Resume
+
+            </h2>
+
+
+            <div
+                class="modal-score"
+                id="modalScore">
+
+                89%
+
+            </div>
+
+
+            <p>
+
+                Your performance has been saved
+                successfully in your CV Insight history.
+
+            </p>
+
+
+            <div class="modal-actions">
+
+
+                <button
+                    class="secondary-btn"
+                    id="closeDetailsBtn">
+
+                    Close
+
+                </button>
+
+
+                <button class="primary-btn">
+
+                    View Full Report
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="history.js"></script>
+
+
+</body>
+
+</html>
