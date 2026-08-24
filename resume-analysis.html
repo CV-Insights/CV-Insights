@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Insight - Resume Analysis</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="resume-analysis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<aside class="sidebar">
+    <div class="logo">
+        <i class="fa-solid fa-file-circle-check"></i>
+        <h2>CV Insight</h2>
+    </div>
+    <ul class="menu">
+        <li><a href="dashboard.html"><i class="fa-solid fa-house"></i><span>Dashboard</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-upload"></i><span>Upload Resume</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-briefcase"></i><span>Job Description</span></a></li>
+        <li class="active"><a href="resume-analysis.html"><i class="fa-solid fa-chart-line"></i><span>Resume Analysis</span></a></li>
+        <li><a href="ai-suggestions.html"><i class="fa-solid fa-lightbulb"></i><span>AI Suggestions</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-layer-group"></i><span>Resume Templates</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-user-tie"></i><span>Interview Prep</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+    </ul>
+    <div class="logout">
+        <button><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+    </div>
+</aside>
+
+<div class="main">
+
+<header class="topbar">
+    <div class="left-nav">
+        <button id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+        <h1>Resume Analysis</h1>
+    </div>
+    <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search resume, keywords...">
+    </div>
+    <div class="right-nav">
+        <button id="themeBtn"><i class="fa-solid fa-moon"></i></button>
+        <div class="notification"><i class="fa-solid fa-bell"></i><span>4</span></div>
+        <div class="profile">
+            <img src="https://i.pravatar.cc/150?img=12">
+            <div><h4>Bhumish</h4><p>Student</p></div>
+        </div>
+        <button class="download"><i class="fa-solid fa-download"></i> Download Report</button>
+    </div>
+</header>
+
+<section class="welcome ra-banner">
+    <div>
+        <h2>Resume Analysis &#x1F4CA;</h2>
+        <p>Deep-dive into your resume's ATS performance, keyword match, and section-by-section score.</p>
+    </div>
+    <button id="analyzeBtn"><i class="fa-solid fa-rotate"></i> Re-Analyze Resume</button>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+    <div class="card"><div><p>ATS Score</p><h2>89%</h2></div><i class="fa-solid fa-chart-simple"></i></div>
+    <div class="card"><div><p>Keyword Match</p><h2>78%</h2></div><i class="fa-solid fa-key"></i></div>
+    <div class="card"><div><p>Formatting</p><h2>95%</h2></div><i class="fa-solid fa-file-lines"></i></div>
+    <div class="card"><div><p>Grammar</p><h2>98%</h2></div><i class="fa-solid fa-spell-check"></i></div>
+    <div class="card"><div><p>Experience Match</p><h2>91%</h2></div><i class="fa-solid fa-briefcase"></i></div>
+    <div class="card"><div><p>Resume Strength</p><h2>Strong</h2></div><i class="fa-solid fa-shield-halved"></i></div>
+</section>
+
+<!-- Radar + Score Breakdown -->
+<section class="analytics-row">
+    <div class="panel chart-panel">
+        <div class="panel-header">
+            <h3>Resume Analysis Radar</h3>
+            <button id="refreshChartBtn">Refresh</button>
+        </div>
+        <canvas id="radarChart" width="400" height="380"></canvas>
+    </div>
+    <div class="panel breakdown">
+        <div class="panel-header"><h3>Score Breakdown</h3></div>
+        <div class="score-box">
+            <div class="score-item"><div class="title"><span>Technical Skills</span><span>92%</span></div><div class="progress"><div style="width:92%"></div></div></div>
+            <div class="score-item"><div class="title"><span>Experience</span><span>90%</span></div><div class="progress"><div style="width:90%"></div></div></div>
+            <div class="score-item"><div class="title"><span>Education</span><span>88%</span></div><div class="progress"><div style="width:88%"></div></div></div>
+            <div class="score-item"><div class="title"><span>Projects</span><span>81%</span></div><div class="progress"><div style="width:81%"></div></div></div>
+            <div class="score-item"><div class="title"><span>Achievements</span><span>73%</span></div><div class="progress"><div style="width:73%"></div></div></div>
+            <div class="score-item"><div class="title"><span>Certifications</span><span>96%</span></div><div class="progress"><div style="width:96%"></div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Keyword Analysis -->
+<section class="analysis-grid">
+    <div class="panel">
+        <div class="panel-header"><h3>Matched Keywords</h3><span class="ra-badge passed">18 Found</span></div>
+        <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+            <span>Git</span><span>REST API</span><span>Node.js</span><span>MongoDB</span>
+            <span>Agile</span><span>Bootstrap</span><span>TypeScript</span><span>Express.js</span>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel-header"><h3>Missing Keywords</h3><span class="ra-badge warn">Improve ATS</span></div>
+        <div class="tags missing">
+            <span>AWS</span><span>Docker</span><span>Kubernetes</span><span>CI/CD</span>
+            <span>Azure</span><span>Power BI</span><span>TensorFlow</span><span>Machine Learning</span>
+        </div>
+    </div>
+</section>
+
+
+<section class="panel">
+    <div class="panel-header"><h3>ATS Format Checklist</h3><span class="ra-badge passed">8 / 10 Passed</span></div>
+    <div class="ra-checklist-grid">
+        <div class="ra-check-item check-pass"><i class="fa-solid fa-circle-check"></i><div><h4>PDF Format</h4><p>Your file is in ATS-friendly PDF format.</p></div></div>
+        <div class="ra-check-item check-pass"><i class="fa-solid fa-circle-check"></i><div><h4>Proper Headings</h4><p>Headings are structured and readable.</p></div></div>
+        <div class="ra-check-item check-pass"><i class="fa-solid fa-circle-check"></i><div><h4>One Column Layout</h4><p>Single-column layout detected.</p></div></div>
+        <div class="ra-check-item check-pass"><i class="fa-solid fa-circle-check"></i><div><h4>Font Consistency</h4><p>Consistent font usage throughout.</p></div></div>
+        <div class="ra-check-item check-pass"><i class="fa-solid fa-circle-check"></i><div><h4>Contact Information</h4><p>Email, phone and location included.</p></div></div>
+        <div class="ra-check-item check-pass"><i class="fa-solid fa-circle-check"></i><div><h4>Standard Margins</h4><p>Margins are within recommended range.</p></div></div>
+        <div class="ra-check-item check-pass"><i class="fa-solid fa-circle-check"></i><div><h4>No Images / Charts</h4><p>No non-text elements blocking ATS.</p></div></div>
+        <div class="ra-check-item check-pass"><i class="fa-solid fa-circle-check"></i><div><h4>Date Format</h4><p>Dates are in consistent format.</p></div></div>
+        <div class="ra-check-item check-warn"><i class="fa-solid fa-triangle-exclamation"></i><div><h4>Tables Detected</h4><p>Some tables may not parse correctly.</p></div></div>
+        <div class="ra-check-item check-warn"><i class="fa-solid fa-triangle-exclamation"></i><div><h4>Icons Overused</h4><p>Reduce icon usage for better ATS parse.</p></div></div>
+    </div>
+</section>
+
+
+<section class="panel">
+    <div class="panel-header"><h3>Grammar &amp; Writing Analysis</h3><span class="ra-badge passed">98% Accuracy</span></div>
+    <div class="grammar-grid">
+        <div class="grammar-card good"><i class="fa-solid fa-check-circle"></i><h4>Grammar</h4><p>No grammar mistakes detected.</p></div>
+        <div class="grammar-card warning"><i class="fa-solid fa-pen"></i><h4>Passive Voice</h4><p>2 passive sentences found.</p></div>
+        <div class="grammar-card warning"><i class="fa-solid fa-repeat"></i><h4>Repeated Words</h4><p>3 repeated words detected.</p></div>
+        <div class="grammar-card good"><i class="fa-solid fa-font"></i><h4>Vocabulary</h4><p>Professional language used.</p></div>
+        <div class="grammar-card good"><i class="fa-solid fa-spell-check"></i><h4>Spelling</h4><p>No spelling mistakes.</p></div>
+        <div class="grammar-card warning"><i class="fa-solid fa-bolt"></i><h4>Action Verbs</h4><p>Add stronger action verbs.</p></div>
+    </div>
+</section>
+
+
+<section class="panel">
+    <div class="panel-header">
+        <h3>Section-wise Analysis</h3>
+        <button id="exportBtn"><i class="fa-solid fa-file-export"></i> Export PDF</button>
+    </div>
+    <div class="ra-table-wrap">
+        <table class="ra-section-table">
+            <thead>
+                <tr><th>Section</th><th>Status</th><th>Score</th><th>Feedback</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><i class="fa-solid fa-user"></i> Contact Info</td><td><span class="ra-badge passed">Complete</span></td><td>100%</td><td>All required fields present.</td></tr>
+                <tr><td><i class="fa-solid fa-file-alt"></i> Summary</td><td><span class="ra-badge passed">Good</span></td><td>88%</td><td>Add quantifiable achievements.</td></tr>
+                <tr><td><i class="fa-solid fa-briefcase"></i> Experience</td><td><span class="ra-badge passed">Strong</span></td><td>91%</td><td>Use more action verbs.</td></tr>
+                <tr><td><i class="fa-solid fa-graduation-cap"></i> Education</td><td><span class="ra-badge passed">Good</span></td><td>85%</td><td>Include GPA if above 3.5.</td></tr>
+                <tr><td><i class="fa-solid fa-code"></i> Skills</td><td><span class="ra-badge warn">Improve</span></td><td>73%</td><td>Add cloud &amp; DevOps skills.</td></tr>
+                <tr><td><i class="fa-solid fa-diagram-project"></i> Projects</td><td><span class="ra-badge warn">Improve</span></td><td>78%</td><td>Add 2-3 live project links.</td></tr>
+                <tr><td><i class="fa-solid fa-certificate"></i> Certifications</td><td><span class="ra-badge passed">Excellent</span></td><td>96%</td><td>Well-structured and verified.</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+<section class="panel">
+    <div class="panel-header"><h3>Analysis History</h3><button>View All</button></div>
+    <table class="history-table">
+        <thead><tr><th>Date</th><th>ATS Score</th><th>Version</th><th>Status</th></tr></thead>
+        <tbody>
+            <tr><td>20 July</td><td>83%</td><td>V1</td><td><span class="success">Improved</span></td></tr>
+            <tr><td>23 July</td><td>86%</td><td>V2</td><td><span class="success">Improved</span></td></tr>
+            <tr><td>28 July</td><td>91%</td><td>V3</td><td><span class="excellent">Excellent</span></td></tr>
+        </tbody>
+    </table>
+</section>
+
+<footer><p>&copy; 2026 CV Insight | AI Resume Analyzer</p></footer>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="resume-analysis.js"></script>
+</body>
+</html>
