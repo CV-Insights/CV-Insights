@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Insight - AI Suggestions</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="ai-suggestions.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+
+<aside class="sidebar">
+    <div class="logo">
+        <i class="fa-solid fa-file-circle-check"></i>
+        <h2>CV Insight</h2>
+    </div>
+    <ul class="menu">
+        <li><a href="dashboard.html"><i class="fa-solid fa-house"></i><span>Dashboard</span></a></li>
+        <li><a href="upload-resume.html"><i class="fa-solid fa-upload"></i><span>Upload Resume</span></a></li>
+        <li><a href="job-description.html"><i class="fa-solid fa-briefcase"></i><span>Job Description</span></a></li>
+        <li><a href="resume-analysis.html"><i class="fa-solid fa-chart-line"></i><span>Resume Analysis</span></a></li>
+        <li class="active"><a href="ai-suggestions.html"><i class="fa-solid fa-lightbulb"></i><span>AI Suggestions</span></a></li>
+        <li><a href="templates.html"><i class="fa-solid fa-layer-group"></i><span>Resume Templates</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a></li>
+        <li><a href=""><i class="fa-solid fa-user-tie"></i><span>Interview Prep</span></a></li>
+        <li><a href="profile-setup.html"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+    </ul>
+    <div class="logout">
+        <button><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+    </div>
+</aside>
+
+
+<div class="main">
+
+<header class="topbar">
+    <div class="left-nav">
+        <button id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+        <h1>AI Suggestions</h1>
+    </div>
+    <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search suggestions...">
+    </div>
+    <div class="right-nav">
+        <button id="themeBtn"><i class="fa-solid fa-moon"></i></button>
+        <div class="notification"><i class="fa-solid fa-bell"></i><span>4</span></div>
+        <div class="profile">
+            <img src="https://i.pravatar.cc/150?img=12">
+            <div><h4>Bhumish</h4><p>Student</p></div>
+        </div>
+        <button class="download"><i class="fa-solid fa-download"></i> Download Report</button>
+    </div>
+</header>
+
+
+<section class="welcome ai-banner">
+    <div>
+        <h2>AI Suggestions &#x1F916;</h2>
+        <p>Smart, personalized recommendations to boost your resume's ATS score and land more interviews.</p>
+    </div>
+    <button id="generateBtn"><i class="fa-solid fa-wand-magic-sparkles"></i> Generate New Suggestions</button>
+</section>
+
+
+<section class="stats">
+    <div class="card"><div><p>Total Suggestions</p><h2>12</h2></div><i class="fa-solid fa-lightbulb"></i></div>
+    <div class="card"><div><p>Critical Issues</p><h2>3</h2></div><i class="fa-solid fa-triangle-exclamation"></i></div>
+    <div class="card"><div><p>Improvements</p><h2>6</h2></div><i class="fa-solid fa-arrow-trend-up"></i></div>
+    <div class="card"><div><p>Completed</p><h2>3</h2></div><i class="fa-solid fa-circle-check"></i></div>
+    <div class="card"><div><p>ATS Boost Est.</p><h2>+11%</h2></div><i class="fa-solid fa-rocket"></i></div>
+    <div class="card"><div><p>AI Confidence</p><h2>94%</h2></div><i class="fa-solid fa-brain"></i></div>
+</section>
+
+
+<section class="panel">
+    <div class="panel-header">
+        <h3>Priority Suggestions</h3>
+        <button id="generateBtn2"><i class="fa-solid fa-rotate"></i> Regenerate</button>
+    </div>
+
+    <div class="ai-suggestions-list">
+
+        <!-- Critical -->
+        <div class="ai-card critical" data-id="1">
+            <div class="ai-card-left">
+                <div class="ai-priority-badge critical-badge">Critical</div>
+                <i class="fa-solid fa-key"></i>
+            </div>
+            <div class="ai-card-body">
+                <h4>Add Missing Keywords</h4>
+                <p>Include <strong>AWS, Docker, Kubernetes</strong> and <strong>CI/CD</strong> in your skills section. These keywords appear in 87% of target job descriptions.</p>
+                <div class="ai-impact">
+                    <span><i class="fa-solid fa-arrow-up"></i> ATS Impact: +8%</span>
+                    <span><i class="fa-solid fa-clock"></i> 5 min fix</span>
+                </div>
+            </div>
+            <div class="ai-card-actions">
+                <button class="btn-apply" onclick="markDone(this)"><i class="fa-solid fa-check"></i> Mark Done</button>
+                <button class="btn-skip" onclick="skipCard(this)"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+
+        <div class="ai-card critical" data-id="2">
+            <div class="ai-card-left">
+                <div class="ai-priority-badge critical-badge">Critical</div>
+                <i class="fa-solid fa-diagram-project"></i>
+            </div>
+            <div class="ai-card-body">
+                <h4>Add Real-World Projects</h4>
+                <p>Add 2-3 live projects with <strong>GitHub links</strong> and measurable outcomes. Recruiters shortlist 3x more often when projects are listed.</p>
+                <div class="ai-impact">
+                    <span><i class="fa-solid fa-arrow-up"></i> ATS Impact: +6%</span>
+                    <span><i class="fa-solid fa-clock"></i> 15 min fix</span>
+                </div>
+            </div>
+            <div class="ai-card-actions">
+                <button class="btn-apply" onclick="markDone(this)"><i class="fa-solid fa-check"></i> Mark Done</button>
+                <button class="btn-skip" onclick="skipCard(this)"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+
+        <div class="ai-card critical" data-id="3">
+            <div class="ai-card-left">
+                <div class="ai-priority-badge critical-badge">Critical</div>
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div class="ai-card-body">
+                <h4>Use Stronger Action Verbs</h4>
+                <p>Replace weak verbs like <em>"worked on"</em> or <em>"helped"</em> with power verbs like <strong>Engineered, Architected, Spearheaded</strong> to score higher.</p>
+                <div class="ai-impact">
+                    <span><i class="fa-solid fa-arrow-up"></i> ATS Impact: +4%</span>
+                    <span><i class="fa-solid fa-clock"></i> 10 min fix</span>
+                </div>
+            </div>
+            <div class="ai-card-actions">
+                <button class="btn-apply" onclick="markDone(this)"><i class="fa-solid fa-check"></i> Mark Done</button>
+                <button class="btn-skip" onclick="skipCard(this)"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+
+        
+        <div class="ai-card improve" data-id="4">
+            <div class="ai-card-left">
+                <div class="ai-priority-badge improve-badge">Improve</div>
+                <i class="fa-solid fa-file-circle-check"></i>
+            </div>
+            <div class="ai-card-body">
+                <h4>Optimize Formatting</h4>
+                <p>Reduce excessive white space, align section headings, and keep the resume to <strong>1–2 pages</strong> maximum for best readability.</p>
+                <div class="ai-impact">
+                    <span><i class="fa-solid fa-arrow-up"></i> ATS Impact: +3%</span>
+                    <span><i class="fa-solid fa-clock"></i> 8 min fix</span>
+                </div>
+            </div>
+            <div class="ai-card-actions">
+                <button class="btn-apply" onclick="markDone(this)"><i class="fa-solid fa-check"></i> Mark Done</button>
+                <button class="btn-skip" onclick="skipCard(this)"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+
+        <div class="ai-card improve" data-id="5">
+            <div class="ai-card-left">
+                <div class="ai-priority-badge improve-badge">Improve</div>
+                <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div class="ai-card-body">
+                <h4>Quantify Achievements</h4>
+                <p>Add numbers to your experience bullets: <strong>"Increased performance by 40%"</strong>, <strong>"Reduced load time by 2s"</strong>. Quantified results stand out.</p>
+                <div class="ai-impact">
+                    <span><i class="fa-solid fa-arrow-up"></i> ATS Impact: +3%</span>
+                    <span><i class="fa-solid fa-clock"></i> 12 min fix</span>
+                </div>
+            </div>
+            <div class="ai-card-actions">
+                <button class="btn-apply" onclick="markDone(this)"><i class="fa-solid fa-check"></i> Mark Done</button>
+                <button class="btn-skip" onclick="skipCard(this)"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+
+        <div class="ai-card improve" data-id="6">
+            <div class="ai-card-left">
+                <div class="ai-priority-badge improve-badge">Improve</div>
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="ai-card-body">
+                <h4>Add GPA (If above 3.5)</h4>
+                <p>Including your GPA in the Education section improves credibility for entry to mid-level roles. Add CGPA only if it is <strong>3.5+</strong>.</p>
+                <div class="ai-impact">
+                    <span><i class="fa-solid fa-arrow-up"></i> ATS Impact: +2%</span>
+                    <span><i class="fa-solid fa-clock"></i> 2 min fix</span>
+                </div>
+            </div>
+            <div class="ai-card-actions">
+                <button class="btn-apply" onclick="markDone(this)"><i class="fa-solid fa-check"></i> Mark Done</button>
+                <button class="btn-skip" onclick="skipCard(this)"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="panel">
+    <div class="panel-header">
+        <h3>Skills Recommended by AI</h3>
+        <button>Add Skills</button>
+    </div>
+    <div class="skills-grid">
+        <div class="skill-card"><i class="fa-brands fa-aws"></i><h4>AWS</h4><p>Cloud Deployment</p></div>
+        <div class="skill-card"><i class="fa-brands fa-docker"></i><h4>Docker</h4><p>Containerization</p></div>
+        <div class="skill-card"><i class="fa-solid fa-database"></i><h4>SQL</h4><p>Database</p></div>
+        <div class="skill-card"><i class="fa-solid fa-chart-column"></i><h4>Power BI</h4><p>Visualization</p></div>
+        <div class="skill-card"><i class="fa-solid fa-brain"></i><h4>Machine Learning</h4><p>AI Skill</p></div>
+        <div class="skill-card"><i class="fa-solid fa-cloud"></i><h4>Azure</h4><p>Cloud Platform</p></div>
+    </div>
+</section>
+
+
+<section class="panel">
+    <div class="panel-header">
+        <h3>Suggestion Progress Tracker</h3>
+        <span class="ai-progress-label" id="progressLabel">3 / 9 Completed</span>
+    </div>
+
+    <div class="ai-progress-outer">
+        <div class="ai-progress-fill" id="progressFill" style="width: 33%">
+            <span>33%</span>
+        </div>
+    </div>
+
+    <div class="ai-tracker-grid">
+
+        <div class="ai-tracker-item done">
+            <i class="fa-solid fa-circle-check"></i>
+            <div><h4>Spell Check</h4><p>No spelling errors found.</p></div>
+        </div>
+
+        <div class="ai-tracker-item done">
+            <i class="fa-solid fa-circle-check"></i>
+            <div><h4>Contact Info</h4><p>All contact details present.</p></div>
+        </div>
+
+        <div class="ai-tracker-item done">
+            <i class="fa-solid fa-circle-check"></i>
+            <div><h4>Certifications</h4><p>Relevant certifications added.</p></div>
+        </div>
+
+        <div class="ai-tracker-item pending">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            <div><h4>Keywords</h4><p>Add cloud-related keywords.</p></div>
+        </div>
+
+        <div class="ai-tracker-item pending">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            <div><h4>Action Verbs</h4><p>Use stronger action verbs.</p></div>
+        </div>
+
+        <div class="ai-tracker-item pending">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            <div><h4>Projects</h4><p>Add 2-3 live projects.</p></div>
+        </div>
+
+        <div class="ai-tracker-item pending">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            <div><h4>Quantify Results</h4><p>Add metrics to experience.</p></div>
+        </div>
+
+        <div class="ai-tracker-item pending">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            <div><h4>Formatting</h4><p>Optimize whitespace.</p></div>
+        </div>
+
+        <div class="ai-tracker-item pending">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            <div><h4>Skills Section</h4><p>Add DevOps skills.</p></div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="panel ai-chat-panel">
+    <div class="panel-header">
+        <h3><i class="fa-solid fa-robot"></i> Ask AI Assistant</h3>
+        <span class="ai-online-badge"><i class="fa-solid fa-circle"></i> Online</span>
+    </div>
+
+    <div class="ai-chat-box" id="chatBox">
+
+        <div class="ai-msg bot">
+            <div class="ai-avatar"><i class="fa-solid fa-robot"></i></div>
+            <div class="ai-bubble">
+                <p>Hello <strong>Bhumish</strong>! I've analyzed your resume and have <strong>12 suggestions</strong> ready. What would you like to improve first — keywords, formatting, or projects?</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ai-chat-input">
+        <input type="text" id="chatInput" placeholder="Ask about your resume..." />
+        <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+</section>
+
+
+<footer><p>&copy; 2026 CV Insight | AI Resume Analyzer</p></footer>
+
+</div>
+</div>
+
+<script src="ai-suggestions.js"></script>
+</body>
+</html>
