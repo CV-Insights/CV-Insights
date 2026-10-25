@@ -1,0 +1,409 @@
+/* ==========================================================================
+   AUTH PAGES REDESIGN (NEONE Deep Space Glow & Glassmorphism)
+   Login, Signup, and Intro Splash with cosmic gradients
+   ========================================================================== */
+
+.auth-shell {
+  min-height: 100vh;
+  background-color: #040711 !important;
+  color: #f8fafc !important;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Floating Cosmic Orbs */
+.auth-background-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orb-left {
+  width: 480px;
+  height: 480px;
+  left: -120px;
+  top: 15%;
+  background: radial-gradient(circle, rgba(121, 82, 245, 0.28) 0%, transparent 70%);
+}
+
+.orb-right {
+  width: 550px;
+  height: 550px;
+  right: -150px;
+  bottom: 5%;
+  background: radial-gradient(circle, rgba(0, 242, 254, 0.2) 0%, transparent 70%);
+}
+
+/* Auth Brand Header */
+.auth-brand {
+  position: absolute;
+  top: 32px;
+  left: 48px;
+  z-index: 10;
+}
+
+.auth-layout {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.1fr 440px;
+  gap: 70px;
+  align-items: center;
+  max-width: 1080px;
+  width: calc(100% - 64px);
+  padding: 80px 0 60px;
+}
+
+/* Promo Column on Left */
+.auth-promo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth-promo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(121, 82, 245, 0.15);
+  border: 1px solid rgba(121, 82, 245, 0.35);
+  color: #c084fc;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 6px 14px;
+  border-radius: 30px;
+  width: max-content;
+}
+
+.auth-promo-badge i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00f2fe;
+  box-shadow: 0 0 8px #00f2fe;
+  display: inline-block;
+}
+
+.auth-promo h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(34px, 3.8vw, 48px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.auth-promo p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.auth-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.auth-feature-list span {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.auth-feature-list i {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: rgba(121, 82, 245, 0.18);
+  border: 1px solid rgba(121, 82, 245, 0.35);
+  color: #c084fc;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  font-style: normal;
+  flex-shrink: 0;
+}
+
+.auth-feature-list b {
+  display: block;
+  font-size: 14px;
+  color: #f1f5f9;
+}
+
+.auth-feature-list small {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.auth-quote {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.auth-quote span {
+  font-size: 32px;
+  color: #7952f5;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.auth-quote p {
+  font-size: 13px;
+  color: #cbd5e1;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Auth Glassmorphism Card */
+.auth-card {
+  background: rgba(11, 16, 32, 0.8) !important;
+  backdrop-filter: blur(28px) !important;
+  -webkit-backdrop-filter: blur(28px) !important;
+  border: 1px solid rgba(99, 102, 241, 0.35) !important;
+  border-radius: 24px !important;
+  padding: 36px 32px !important;
+  box-shadow:
+    0 25px 60px -15px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(99, 102, 241, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+}
+
+.auth-card-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.auth-secure-label {
+  font-size: 10px;
+  color: #00f2fe;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.auth-card h2 {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin: 0 0 6px !important;
+}
+
+.auth-card > p {
+  font-size: 13px !important;
+  color: #94a3b8 !important;
+  margin: 0 0 24px !important;
+}
+
+.auth-input {
+  background: rgba(7, 10, 22, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
+  height: 42px !important;
+  padding: 0 12px !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.25s ease;
+}
+
+.auth-input:focus-within {
+  border-color: #7952f5 !important;
+  box-shadow: 0 0 16px rgba(121, 82, 245, 0.35) !important;
+  background: rgba(10, 15, 30, 0.95) !important;
+}
+
+.auth-input input {
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+  color: #ffffff !important;
+  font-size: 13px !important;
+  flex: 1;
+}
+
+.auth-input button {
+  background: transparent;
+  border: 0;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.auth-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #94a3b8;
+  margin: 14px 0 20px;
+}
+
+.auth-options button {
+  background: transparent;
+  border: 0;
+  color: #c084fc;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.auth-options button:hover {
+  color: #00f2fe;
+}
+
+.auth-switch {
+  text-align: center;
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 24px;
+}
+
+.auth-switch button {
+  background: transparent;
+  border: 0;
+  color: #c084fc;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+.auth-switch button:hover {
+  color: #00f2fe;
+  text-decoration: underline;
+}
+
+.auth-footer {
+  position: absolute;
+  bottom: 24px;
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+  color: #64748b;
+  z-index: 10;
+}
+
+/* ==========================================================================
+   SPLASH / INTRO SCREEN
+   ========================================================================== */
+.reference-splash-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.2) 0%, #040711 70%) !important;
+}
+
+.reference-splash {
+  background: rgba(11, 16, 32, 0.85);
+  backdrop-filter: blur(28px);
+  border: 1px solid rgba(121, 82, 245, 0.4);
+  border-radius: 28px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8), 0 0 50px rgba(121, 82, 245, 0.25);
+  max-width: 480px;
+  width: calc(100% - 40px);
+}
+
+.reference-splash-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.reference-brand-mark {
+  width: 72px;
+  height: 64px;
+  filter: drop-shadow(0 0 20px rgba(121, 82, 245, 0.6));
+}
+
+.reference-splash-brand strong {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.reference-splash-brand span {
+  font-size: 12px;
+  color: #00f2fe;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.reference-splash-copy h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+
+.reference-splash-copy p {
+  color: #94a3b8;
+  font-size: 14px;
+  margin: 0 0 24px;
+}
+
+.splash-loading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #94a3b8;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.splash-loading i {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-top-color: #00f2fe;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.splash-skip {
+  background: transparent;
+  border: 0;
+  color: #c084fc;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.splash-skip:hover {
+  color: #00f2fe;
+}
